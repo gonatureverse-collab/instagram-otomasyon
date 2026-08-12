@@ -1,48 +1,104 @@
-name: Günlük Instagram Postu
+name: Günlük Instagram İçeriği
 
 on:
+
+  # Her gün Türkiye saatiyle 10:00
+  # Ağustos ayında Türkiye UTC+3 olduğu için UTC 07:00
   schedule:
-    # Her gün TSİ 10:00'da (UTC 07:00) ve TSİ 18:00'de (UTC 15:00) çalışır
     - cron: "0 7 * * *"
-    - cron: "0 15 * * *"
-  workflow_dispatch: {}  # GitHub'dan elle de tetiklenebilir
+
+  # GitHub üzerinden manuel çalıştırma
+  workflow_dispatch:
 
 permissions:
   contents: write
 
+
 jobs:
-  post-uret-ve-yayinla:
+
+  instagram-otomasyonu:
+
     runs-on: ubuntu-latest
+
     steps:
+
+      # ======================================================
+      # 1. REPOSITORY'Yİ İNDİR
+      # ======================================================
+
       - name: Kodu indir
         uses: actions/checkout@v4
+
+
+      # ======================================================
+      # 2. PYTHON KUR
+      # ======================================================
 
       - name: Python kur
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
+
+      # ======================================================
+      # 3. KÜTÜPHANELERİ KUR
+      # ======================================================
+
       - name: Kütüphaneleri kur
         run: |
+          python -m pip install --upgrade pip
           pip install playwright anthropic python-dotenv requests
           playwright install --with-deps chromium
+
+
+      # ======================================================
+      # 4. GITHUB KİMLİĞİNİ AYARLA
+      # ======================================================
 
       - name: Git kimliğini ayarla
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
 
-      - name: Ana script'i çalıştır
+
+      # ======================================================
+      # 5. ANA OTOMASYONU ÇALIŞTIR
+      # ======================================================
+
+      - name: Instagram otomasyonunu çalıştır
         env:
+
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+
           GITHUB_USERNAME: gonatureverse-collab
+
           GITHUB_REPO: instagram-otomasyon
-        run: python main.py
+
+        run: |
+          python main.py
+
+
+      # ======================================================
+      # 6. ÜRETİLEN DOSYALARI GITHUB'A KAYDET
+      # ======================================================
 
       - name: Takip dosyalarını kaydet
         run: |
-          git add kullanilan_konular.json cikti/ gorseller/
-          git diff --cached --quiet || git commit -m "otomatik post: $(date +%Y-%m-%d)"
+
+          git add kullanilan_konular.json
+
+          git add cikti/
+
+          git add gorseller/
+
+          git add reels/
+
+          git add stories/
+
+          git diff --cached --quiet || git commit -m "otomatik Instagram içerigi: $(date +%Y-%m-%d)"
+
           git push
