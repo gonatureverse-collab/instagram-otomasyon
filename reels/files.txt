@@ -10,3 +10,4 @@ file 'C:\Users\Serhat\Desktop\instagram-otomasyon\gorseller\2026-08-12_18-07-29\
 duration 1.5
 file 'C:\Users\Serhat\Desktop\instagram-otomasyon\gorseller\2026-08-12_18-07-29\06_slayt.png'
 duration 1.5
+file 'C:\Users\Serhat\Desktop\instagram-otomasyon\gorseller\2026-08-12_18-07-29\06_slayt.png'
