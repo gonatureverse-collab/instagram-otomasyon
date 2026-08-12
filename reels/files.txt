@@ -1,0 +1,12 @@
+file 'C:\Users\Serhat\Desktop\instagram-otomasyon\gorseller\2026-08-12_18-07-29\01_kapak.png'
+duration 1.5
+file 'C:\Users\Serhat\Desktop\instagram-otomasyon\gorseller\2026-08-12_18-07-29\02_slayt.png'
+duration 1.5
+file 'C:\Users\Serhat\Desktop\instagram-otomasyon\gorseller\2026-08-12_18-07-29\03_slayt.png'
+duration 1.5
+file 'C:\Users\Serhat\Desktop\instagram-otomasyon\gorseller\2026-08-12_18-07-29\04_slayt.png'
+duration 1.5
+file 'C:\Users\Serhat\Desktop\instagram-otomasyon\gorseller\2026-08-12_18-07-29\05_slayt.png'
+duration 1.5
+file 'C:\Users\Serhat\Desktop\instagram-otomasyon\gorseller\2026-08-12_18-07-29\06_slayt.png'
+duration 1.5
