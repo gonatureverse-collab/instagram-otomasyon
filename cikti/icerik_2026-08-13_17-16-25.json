@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Yaz Lastiği Seçimi",
+  "kapak_emoji": "🛞",
+  "slaytlar": [
+    "Almanya'da yaz lastiği seçmek için önce araç üreticisinin önerdiği ebatı kontrol et. Bu bilgiyi araç belgelerinde veya kapı kenarında bulabilirsin.",
+    "TUVEV sertifikası ara. Almanya'da satılan lastiklerin EU etiketlemesi olmalı. Isı ve yaş aderans derecelendirmesine bak.",
+    "Tekerleklerin hava basıncını doğru ayarla. Her 2-4 hafta kontrol et. Yanlış basınç, lastiğin ömrünü kısaltır ve yakıt tüketimini artırır.",
+    "Lastiğin desen derinliğini kontrol et. Yeni lastik genelde 8mm desen derinliğine sahiptir. 1.6mm altına inerse değiştirmen gerekir.",
+    "Fiyat ve marka arasında denge bul. Tanınmış markaların (Michelin, Bridgestone, Continental vb.) daha uzun ömrü vardır. Online veya otoparkçıda karşılaştır."
+  ],
+  "emojiler": [
+    "📋",
+    "✅",
+    "🔧",
+    "📏",
+    "💰"
+  ],
+  "reel": {
+    "baslik": "Yaz Lastiği Seçimi - Adım Adım",
+    "sahneler": [
+      "Yaz lastiği seçerken doğru ebatı bilmen şart! Araç belgelerine bak.",
+      "EU etiketinde isı ve ıslaklık derecelendirmesini kontrol et.",
+      "Hava basıncını düzenli tutman uzun ömür demek.",
+      "1.6mm desen derinliği sınırını aşarsan lastik değiş zamanı geldi.",
+      "Tanınmış markalar biraz pahalı ama daha dayanıklı oluyor.",
+      "Doğru lastik seçimi = Güvenli sürüş! Yorum yazarak deneyimini paylaş."
+    ],
+    "cta": "Sahip olduğun lastik markasını yorum kısmında yazabilirsin. 👇"
+  },
+  "story": {
+    "baslik": "Yaz Lastiği Anketi",
+    "metin": "Almanya'da yaz lastiğini nerede satın almayı tercih ediyorsun?",
+    "anket": [
+      "Online (TÜM, Autodoc vb.)",
+      "Lokal otoparkçı"
+    ]
+  },
+  "caption": "Almanya'da yaz lastiği seçimi hiç bu kadar kolay olmamıştı! 🛞 Araç belgenizde yazılı ebatı kontrolünü unutmayın ve EU etiketini incelemeden satın almayın. Doğru lastik = güvenli yol. Bu tipsler işinize yaradıysa kaydedin ve arkadaşlarınızla paylaşın! 💛",
+  "hashtagler": [
+    "#almanya",
+    "#almanyadayasam",
+    "#lastiği",
+    "#tuyoları",
+    "#otomobil",
+    "#trafik",
+    "#almanyadanasilyapilir",
+    "#deutschlandtipps",
+    "#güvenlisürüş",
+    "#yanastikleri"
+  ],
+  "konu": "Almanya'da yaz lastiği nasıl seçilir",
+  "tarih": "2026-08-13_17-16-25"
+}
