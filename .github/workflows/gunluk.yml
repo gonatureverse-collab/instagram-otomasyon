@@ -1,21 +1,18 @@
 name: Günlük Instagram İçeriği
 
 on:
-
   # Her gün Türkiye saatiyle 10:00
-  # Ağustos ayında Türkiye UTC+3 olduğu için UTC 07:00
+  # UTC+3 -> UTC 07:00
   schedule:
     - cron: "0 7 * * *"
 
-  # GitHub üzerinden manuel çalıştırma
+  # GitHub Actions üzerinden manuel başlatma
   workflow_dispatch:
 
 permissions:
   contents: write
 
-
 jobs:
-
   instagram-otomasyonu:
 
     runs-on: ubuntu-latest
@@ -23,7 +20,7 @@ jobs:
     steps:
 
       # ======================================================
-      # 1. REPOSITORY'Yİ İNDİR
+      # 1. KODU İNDİR
       # ======================================================
 
       - name: Kodu indir
@@ -31,7 +28,7 @@ jobs:
 
 
       # ======================================================
-      # 2. PYTHON KUR
+      # 2. PYTHON
       # ======================================================
 
       - name: Python kur
@@ -41,7 +38,18 @@ jobs:
 
 
       # ======================================================
-      # 3. KÜTÜPHANELERİ KUR
+      # 3. FFMPEG
+      # ======================================================
+
+      - name: FFmpeg kur
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          ffmpeg -version
+
+
+      # ======================================================
+      # 4. PYTHON KÜTÜPHANELERİ
       # ======================================================
 
       - name: Kütüphaneleri kur
@@ -52,7 +60,7 @@ jobs:
 
 
       # ======================================================
-      # 4. GITHUB KİMLİĞİNİ AYARLA
+      # 5. GIT KİMLİĞİ
       # ======================================================
 
       - name: Git kimliğini ayarla
@@ -62,20 +70,15 @@ jobs:
 
 
       # ======================================================
-      # 5. ANA OTOMASYONU ÇALIŞTIR
+      # 6. ANA OTOMASYON
       # ======================================================
 
       - name: Instagram otomasyonunu çalıştır
         env:
-
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
-
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
-
           GITHUB_USERNAME: gonatureverse-collab
-
           GITHUB_REPO: instagram-otomasyon
 
         run: |
@@ -83,20 +86,16 @@ jobs:
 
 
       # ======================================================
-      # 6. ÜRETİLEN DOSYALARI GITHUB'A KAYDET
+      # 7. TAKİP DOSYALARINI GITHUB'A KAYDET
       # ======================================================
 
       - name: Takip dosyalarını kaydet
         run: |
 
           git add kullanilan_konular.json
-
           git add cikti/
-
           git add gorseller/
-
           git add reels/
-
           git add stories/
 
           git diff --cached --quiet || git commit -m "otomatik Instagram içerigi: $(date +%Y-%m-%d)"
