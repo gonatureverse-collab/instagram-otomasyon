@@ -3,24 +3,45 @@ name: Günlük Instagram İçeriği
 on:
   schedule:
 
-    # 10:00 - Carousel
+    # ======================================================
+    # 10:00 ALMANYA SAATİ → CAROUSEL
+    # ======================================================
+
     - cron: "0 10 * * *"
-      timezone: "Europe/Istanbul"
+      timezone: "Europe/Berlin"
 
-    # 14:00 - Reel
+
+    # ======================================================
+    # 14:00 ALMANYA SAATİ → REEL
+    # ======================================================
+
     - cron: "0 14 * * *"
-      timezone: "Europe/Istanbul"
+      timezone: "Europe/Berlin"
 
-    # 20:00 - Story
+
+    # ======================================================
+    # 20:00 ALMANYA SAATİ → STORY
+    # ======================================================
+
     - cron: "0 20 * * *"
-      timezone: "Europe/Istanbul"
+      timezone: "Europe/Berlin"
 
-  # GitHub'dan manuel test
+
+  # GitHub üzerinden manuel tetikleme
   workflow_dispatch:
+
+
+# ==========================================================
+# GITHUB İZİNLERİ
+# ==========================================================
 
 permissions:
   contents: write
 
+
+# ==========================================================
+# JOB
+# ==========================================================
 
 jobs:
 
@@ -30,141 +51,190 @@ jobs:
 
     steps:
 
-      # ======================================================
-      # 1. REPOSITORY
-      # ======================================================
+
+      # ====================================================
+      # 1. REPOSITORY'Yİ İNDİR
+      # ====================================================
 
       - name: Kodu indir
         uses: actions/checkout@v4
 
 
-      # ======================================================
-      # 2. PYTHON
-      # ======================================================
+      # ====================================================
+      # 2. PYTHON KUR
+      # ====================================================
 
       - name: Python kur
         uses: actions/setup-python@v5
+
         with:
           python-version: "3.12"
 
 
-      # ======================================================
-      # 3. FFMPEG
-      # ======================================================
+      # ====================================================
+      # 3. FFMPEG KUR
+      # ====================================================
 
       - name: FFmpeg kur
         run: |
+
           sudo apt-get update
+
           sudo apt-get install -y ffmpeg
+
           ffmpeg -version
 
 
-      # ======================================================
+      # ====================================================
       # 4. PYTHON KÜTÜPHANELERİ
-      # ======================================================
+      # ====================================================
 
       - name: Kütüphaneleri kur
         run: |
+
           python -m pip install --upgrade pip
+
           pip install playwright anthropic python-dotenv requests
+
           playwright install --with-deps chromium
 
 
-      # ======================================================
-      # 5. GIT KİMLİĞİ
-      # ======================================================
+      # ====================================================
+      # 5. GIT KİMLİĞİNİ AYARLA
+      # ====================================================
 
       - name: Git kimliğini ayarla
         run: |
+
           git config --global user.email "action@github.com"
+
           git config --global user.name "GitHub Action"
 
 
-      # ======================================================
-      # 6. 10:00 → CAROUSEL
-      # ======================================================
+      # ====================================================
+      # 6. 10:00 → YENİ İÇERİK + CAROUSEL
+      # ====================================================
 
       - name: Yeni içerik üret
         if: github.event.schedule == '0 10 * * *'
+
         env:
+
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
         run: |
+
           python icerik_uret.py
 
 
       - name: Carousel görsellerini üret
         if: github.event.schedule == '0 10 * * *'
+
         run: |
+
           python gorsel_uret.py
 
 
       - name: Carousel görsellerini GitHub'a gönder
         if: github.event.schedule == '0 10 * * *'
+
         env:
+
           GITHUB_USERNAME: gonatureverse-collab
+
           GITHUB_REPO: instagram-otomasyon
+
         run: |
+
           python github_gorsel_yukle.py
 
 
       - name: Carousel yayınla
         if: github.event.schedule == '0 10 * * *'
+
         env:
+
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+
           GITHUB_USERNAME: gonatureverse-collab
+
           GITHUB_REPO: instagram-otomasyon
+
         run: |
+
           python carousel_yayinla.py
 
 
-      # ======================================================
+      # ====================================================
       # 7. 14:00 → REEL
-      # ======================================================
+      # ====================================================
 
       - name: Reel üret ve yayınla
         if: github.event.schedule == '0 14 * * *'
+
         env:
+
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+
           GITHUB_USERNAME: gonatureverse-collab
+
           GITHUB_REPO: instagram-otomasyon
+
         run: |
+
           python reel_uret.py
 
 
-      # ======================================================
+      # ====================================================
       # 8. 20:00 → STORY
-      # ======================================================
+      # ====================================================
 
       - name: Story görselini üret
         if: github.event.schedule == '0 20 * * *'
+
         run: |
+
           python story_uret.py
 
 
       - name: Story yayınla
         if: github.event.schedule == '0 20 * * *'
+
         env:
+
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+
           GITHUB_USERNAME: gonatureverse-collab
+
           GITHUB_REPO: instagram-otomasyon
+
         run: |
+
           python story_yayinla.py
 
 
-      # ======================================================
-      # 9. TAKİP DOSYALARINI GITHUB'A KAYDET
-      # ======================================================
+      # ====================================================
+      # 9. ÜRETİLEN DOSYALARI GITHUB'A KAYDET
+      # ====================================================
 
       - name: Değişiklikleri GitHub'a kaydet
+
         run: |
 
           git add kullanilan_konular.json
+
           git add cikti/
+
           git add gorseller/
+
           git add reels/
+
           git add stories/
 
           git diff --cached --quiet || git commit -m "otomatik Instagram içerigi: $(date +%Y-%m-%d-%H-%M)"
