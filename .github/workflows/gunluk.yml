@@ -1,18 +1,29 @@
 name: Günlük Instagram İçeriği
 
 on:
-  # Her gün Türkiye saatiyle 10:00
-  # UTC+3 -> UTC 07:00
   schedule:
-    - cron: "0 7 * * *"
 
-  # GitHub Actions üzerinden manuel başlatma
+    # 10:00 - Carousel
+    - cron: "0 10 * * *"
+      timezone: "Europe/Istanbul"
+
+    # 14:00 - Reel
+    - cron: "0 14 * * *"
+      timezone: "Europe/Istanbul"
+
+    # 20:00 - Story
+    - cron: "0 20 * * *"
+      timezone: "Europe/Istanbul"
+
+  # GitHub'dan manuel test
   workflow_dispatch:
 
 permissions:
   contents: write
 
+
 jobs:
+
   instagram-otomasyonu:
 
     runs-on: ubuntu-latest
@@ -20,7 +31,7 @@ jobs:
     steps:
 
       # ======================================================
-      # 1. KODU İNDİR
+      # 1. REPOSITORY
       # ======================================================
 
       - name: Kodu indir
@@ -70,26 +81,84 @@ jobs:
 
 
       # ======================================================
-      # 6. ANA OTOMASYON
+      # 6. 10:00 → CAROUSEL
       # ======================================================
 
-      - name: Instagram otomasyonunu çalıştır
+      - name: Yeni içerik üret
+        if: github.event.schedule == '0 10 * * *'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python icerik_uret.py
+
+
+      - name: Carousel görsellerini üret
+        if: github.event.schedule == '0 10 * * *'
+        run: |
+          python gorsel_uret.py
+
+
+      - name: Carousel görsellerini GitHub'a gönder
+        if: github.event.schedule == '0 10 * * *'
+        env:
+          GITHUB_USERNAME: gonatureverse-collab
+          GITHUB_REPO: instagram-otomasyon
+        run: |
+          python github_gorsel_yukle.py
+
+
+      - name: Carousel yayınla
+        if: github.event.schedule == '0 10 * * *'
+        env:
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
           GITHUB_USERNAME: gonatureverse-collab
           GITHUB_REPO: instagram-otomasyon
-
         run: |
-          python main.py
+          python carousel_yayinla.py
 
 
       # ======================================================
-      # 7. TAKİP DOSYALARINI GITHUB'A KAYDET
+      # 7. 14:00 → REEL
       # ======================================================
 
-      - name: Takip dosyalarını kaydet
+      - name: Reel üret ve yayınla
+        if: github.event.schedule == '0 14 * * *'
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+          GITHUB_USERNAME: gonatureverse-collab
+          GITHUB_REPO: instagram-otomasyon
+        run: |
+          python reel_uret.py
+
+
+      # ======================================================
+      # 8. 20:00 → STORY
+      # ======================================================
+
+      - name: Story görselini üret
+        if: github.event.schedule == '0 20 * * *'
+        run: |
+          python story_uret.py
+
+
+      - name: Story yayınla
+        if: github.event.schedule == '0 20 * * *'
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+          GITHUB_USERNAME: gonatureverse-collab
+          GITHUB_REPO: instagram-otomasyon
+        run: |
+          python story_yayinla.py
+
+
+      # ======================================================
+      # 9. TAKİP DOSYALARINI GITHUB'A KAYDET
+      # ======================================================
+
+      - name: Değişiklikleri GitHub'a kaydet
         run: |
 
           git add kullanilan_konular.json
@@ -98,6 +167,6 @@ jobs:
           git add reels/
           git add stories/
 
-          git diff --cached --quiet || git commit -m "otomatik Instagram içerigi: $(date +%Y-%m-%d)"
+          git diff --cached --quiet || git commit -m "otomatik Instagram içerigi: $(date +%Y-%m-%d-%H-%M)"
 
           git push
