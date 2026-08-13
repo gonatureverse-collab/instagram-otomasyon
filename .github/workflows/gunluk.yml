@@ -12,10 +12,10 @@ on:
 
 
     # ======================================================
-    # 14:30 ALMANYA → TÜRKÇE SESLİ REEL
+    # 16:20 ALMANYA → TÜRKÇE SESLİ REEL TESTİ
     # ======================================================
 
-    - cron: "30 14 * * *"
+    - cron: "20 16 * * *"
       timezone: "Europe/Berlin"
 
 
@@ -168,11 +168,11 @@ jobs:
 
 
       # ====================================================
-      # 7. 14:30 → TÜRKÇE SESLİ REEL
+      # 7. 16:20 → TÜRKÇE SESLİ REEL TEST
       # ====================================================
 
       - name: Reel üret ve yayınla
-        if: github.event.schedule == '30 14 * * *'
+        if: github.event.schedule == '20 16 * * *'
 
         env:
 
