@@ -28,7 +28,7 @@ GORSEL_KLASOR = Path("gorseller")
 REEL_KLASOR = Path("reels")
 
 # Video ayarları
-SLAYT_SURESI = 1.5
+SLAYT_SURESI = 2.0
 FPS = 24
 
 # Instagram video işleme
