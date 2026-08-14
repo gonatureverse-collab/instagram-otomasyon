@@ -2,7 +2,7 @@ name: 10:10 Carousel Yayını
 
 on:
   schedule:
-    - cron: "58 12 * * *"
+    - cron: "00 12 * * *"
       timezone: "Europe/Berlin"
   workflow_dispatch:
 
