@@ -2,7 +2,7 @@ name: 10:00 Carousel Yayını
 
 on:
   schedule:
-    - cron: "54 20 * * *"
+    - cron: "0 07 * * *"
   workflow_dispatch:
 
 permissions:
