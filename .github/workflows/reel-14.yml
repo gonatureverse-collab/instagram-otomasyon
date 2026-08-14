@@ -2,7 +2,7 @@ name: 14:00 Reel Yayını
 
 on:
   schedule:
-    - cron: "0 14 * * *"
+    - cron: "0 11 * * *"
       timezone: "Europe/Berlin"
   workflow_dispatch:
 
