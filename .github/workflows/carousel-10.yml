@@ -1,9 +1,14 @@
 name: 10:10 Carousel Yayını
 
 on:
+  push:
+    branches:
+      - main
+
   schedule:
-    - cron: "00 12 * * *"
+    - cron: "11 12 * * *"
       timezone: "Europe/Berlin"
+
   workflow_dispatch:
 
 permissions:
@@ -11,44 +16,105 @@ permissions:
 
 jobs:
   carousel:
+
+    # --------------------------------------------------
+    # PUSH TESTİ
+    # Sadece GitHub'a push yapıldığında çalışır.
+    # Instagram'a hiçbir şey göndermez.
+    # --------------------------------------------------
+    if: github.event_name != 'push' || github.event_name == 'push'
+
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      # ==================================================
+      # PUSH TESTİ
+      # ==================================================
+
+      - name: PUSH TESTİ - GitHub tetikleme kontrolü
+        if: github.event_name == 'push'
+        run: |
+          echo "=========================================="
+          echo "✅ CAROUSEL PUSH TESTİ BAŞARILI"
+          echo "=========================================="
+          echo "GitHub workflow otomatik olarak tetiklendi."
+          echo "Event: ${{ github.event_name }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "=========================================="
+
+      # ==================================================
+      # NORMAL CAROUSEL
+      # Schedule veya manuel çalıştırmada çalışır.
+      # ==================================================
+
+      - name: Repository'yi indir
+        if: github.event_name != 'push'
+        uses: actions/checkout@v4
+
+      - name: Python kurulumu
+        if: github.event_name != 'push'
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Python paketlerini kur
+        if: github.event_name != 'push'
         run: |
           python -m pip install --upgrade pip
           pip install playwright anthropic python-dotenv requests
           playwright install --with-deps chromium
 
       - name: Git ayarlarını yap
+        if: github.event_name != 'push'
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
 
+      # ==================================================
+      # İÇERİK ÜRET
+      # ==================================================
+
       - name: İçerik üret
+        if: github.event_name != 'push'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python icerik_uret.py
 
+      # ==================================================
+      # GÖRSEL ÜRET
+      # ==================================================
+
       - name: Görsel üret
+        if: github.event_name != 'push'
         run: python gorsel_uret.py
 
+      # ==================================================
+      # GÖRSELLERİ GITHUB'A YÜKLE
+      # ==================================================
+
       - name: Oluşturulan dosyaları GitHub'a yükle
+        if: github.event_name != 'push'
         run: |
           git add kullanilan_konular.json cikti/ gorseller/
           git diff --cached --quiet || git commit -m "carousel: $(date +%Y-%m-%d-%H-%M)"
           git push
 
+      # ==================================================
+      # GITHUB RAW DOSYALARININ HAZIR OLMASINI BEKLE
+      # ==================================================
+
       - name: GitHub görsellerinin erişilebilir olmasını bekle
+        if: github.event_name != 'push'
         run: sleep 20
 
+      # ==================================================
+      # INSTAGRAM CAROUSEL YAYINI
+      # ==================================================
+
       - name: Carousel yayınla
+        if: github.event_name != 'push'
         env:
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
@@ -56,7 +122,12 @@ jobs:
           GITHUB_REPO: instagram-otomasyon
         run: python carousel_yayinla.py
 
+      # ==================================================
+      # YAYIN SONRASI DEĞİŞİKLİKLERİ KAYDET
+      # ==================================================
+
       - name: Yayın sonrası değişiklikleri kaydet
+        if: github.event_name != 'push'
         run: |
           git add kullanilan_konular.json cikti/ gorseller/
           git diff --cached --quiet || git commit -m "carousel: yayın sonrası $(date +%Y-%m-%d-%H-%M)"
