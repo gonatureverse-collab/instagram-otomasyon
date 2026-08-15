@@ -1,0 +1,51 @@
+{
+  "baslik": "Almanya'da İş Sözleşmesi Nasıl Okunur?",
+  "kapak_emoji": "📋",
+  "slaytlar": [
+    "İş sözleşmesi imzalamadan önce her bölümü dikkatle oku. Almanya'da sözleşmeniz yasal haklarını korur.",
+    "Pozisyon, maaş, çalışma saati ve başlangıç tarihi bölümlerini kontrol et. Bu temel bilgiler doğru mu diye sor.",
+    "Deneme süresi (Probezeit) genellikle 1-6 ay arasıdır. Bu dönem her iki taraf da sözleşmeyi sonlandırabilir.",
+    "Yıllık izin günü, hastalık izni ve ek sosyal haklar bölümünü oku. Almanya'da minimum 20 gün izin hakkı vardır.",
+    "Anlamadığın kısımlar için hemen soruştur veya sendika temsilcisinden yardım iste. Hiçbir şey güvensiz hissetme."
+  ],
+  "emojiler": [
+    "📄",
+    "✏️",
+    "⏰",
+    "🏖️",
+    "🤝"
+  ],
+  "reel": {
+    "baslik": "İş Sözleşmesi Okurken Dikkat Etmen Gereken 5 Şey",
+    "sahneler": [
+      "Yeni iş buldum ama sözleşmeyi anlamıyorum... Eğer sen de öyleysen dinle!",
+      "Birinci: Pozisyon, maaş ve çalışma saatleri doğru yazılmış mı? Hepsini kontrol et.",
+      "İkinci: Deneme süresi kaç ay? Almanya'da maksimum 6 ay olabilir. Bunu not et.",
+      "Üçüncü: Yıllık izin kaç gün? İşveren sana tüm haklarını vermeli.",
+      "Dördüncü: Anlamadığın bir şey varsa IMZA ATMADAN sor! Sendika yardımcı olabilir.",
+      "Sende de böyle tecrübe yaşadıysan yorum yaz! Birlikte öğrenelim."
+    ],
+    "cta": "Sözleşmeni oku, sorular soruyla devam et ve bize yorum yaz!"
+  },
+  "story": {
+    "baslik": "Sözleşmeyi Kaç Dakikada Okuyor Musun?",
+    "metin": "İş sözleşmesini imzalamadan ne kadar zaman harcıyorsun?",
+    "anket": [
+      "5 dakika (çabuk bitmesi lazım!)",
+      "30+ dakika (her şeyi iyice okuyorum)"
+    ]
+  },
+  "caption": "Almanya'da iş sözleşmesi imzalamadan önce tüm bölümleri okumak çok önemli! Maaş, izin, çalışma saati ve deneme süresi doğru yazılı mı diye kontrol et. Anlamadığın kısımlar varsa sendika temsilcisinden yardım iste—hiçbir soru aptalca değildir. Eğer bu konuda soru veya tecrübesi varsa yorumda paylaş! 👇",
+  "hashtagler": [
+    "#AlmanyadaÇalışmak",
+    "#İşSözleşmesi",
+    "#AlmanyaNasılYapılır",
+    "#TürkAlman",
+    "#ÇalışmaHakları",
+    "#AlmanyayaYeniBaşlayan",
+    "#SendikayıTanı",
+    "#DeskundeAlmanya"
+  ],
+  "konu": "Almanya'da iş sözleşmesi nasıl okunur",
+  "tarih": "2026-08-15_08-05-07"
+}
