@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Hastalıkta İş Hakları",
+  "kapak_emoji": "🇩🇪",
+  "slaytlar": [
+    "Hasta olduğunda işe gitmezsen, işveren için sertifika (Arbeitsunfähigkeitsbescheinigung) gereklidir. Sertifikayı doktor verirken, çalışan da işverenine bildirmek zorundadır. 📋",
+    "İlk 3 gün doktorla muayene olmadan sözleşmede belirtilmişse işveren kendi formunu kullanabilir. Ama 4. günden itibaren mutlaka doktor sertifikası lazımdır. 🏥",
+    "6 hafta boyunca maaşını almaya devam edersin (Entgeltfortzahlung). İşveren seni bu süre içinde işten çıkaramaz. Para kesintisi yasaktır. 💰",
+    "6 haftadan sonra Krankenkasse (sağlık sigortası) senin hastalık ödenekini öder. Bu miktar maaşından daha düşük olabilir. Bilgi al kurumundan. 📞",
+    "Uzun hastalıklarda: İşveren seni daha sonra işten çıkarabilir, ama Sozialplan ve yasal şartlara uyması gerekir. Avukat danışmanı gerekirse arayabilirsin. ⚖️"
+  ],
+  "emojiler": [
+    "📋",
+    "🏥",
+    "💰",
+    "📞",
+    "⚖️"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Hastalık Sırasında Haklarını Bilmek Çok Önemli",
+    "sahneler": [
+      "Hasta mıyız? Bilmemiz gereken 5 şey var!",
+      "Birinci gün: İşverene haber ver, mümkünse aynı gün. Haber vermezsen sorun yaşarsın.",
+      "Dördüncü gün: Doktor sertifikası (Arbeitsunfähigkeitsbescheinigung) istenir. Sertifikayla işverene gönder.",
+      "İlk 6 hafta: Maaş kesintisiz alırsın! İşveren senin para ödemeye devam etmek zorunda.",
+      "6 haftadan sonra: Sağlık sigortası devralır. Ama miktar daha düşük olabilir.",
+      "Uzun hastalıklar varsa: Haklarını koru, merak edersen Betriebsrat veya avukat danış. Paylaş, kaydedebilir misin?"
+    ],
+    "cta": "Bu bilgileri kaydet ve ihtiyacında tekrar bak!"
+  },
+  "story": {
+    "baslik": "Sana Şimdiye Kadar Hasta Olduğunda Doktor Sertifikası İçin Doktor Ziyareti Yapmak Zorundu mu?",
+    "metin": "Almanya'da hastalık hakları hakkında sen neler biliyorsun? Oylamaya katıl! 👇",
+    "anket": [
+      "Evet, hep biliyordum",
+      "Hayır, yeni öğrendim"
+    ]
+  },
+  "caption": "Almanya'da hasta olduğunda işinin en önemli şeyleri burda! Maaşın korunuyor, doktor sertifikası gerekli, ve sağlık sigortası devreye giriyor. Detayları carousel'de teker teker anlattık. Bu postu kaydet, ihtiyacın olduğunda bak. Yorum yazarak deneyimlerini paylaş! 💙",
+  "hashtagler": [
+    "#almanya",
+    "#almanyadayasam",
+    "#ishshakları",
+    "#işhastalığında",
+    "#almanyadanasilyapilir",
+    "#türkçealmanya",
+    "#göçmen",
+    "#krankenkasse",
+    "#işsağlığı",
+    "#diyedeğil"
+  ],
+  "konu": "Almanya'da hastalıkta iş hakları nelerdir",
+  "tarih": "2026-08-17_08-09-31"
+}
