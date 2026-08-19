@@ -1,0 +1,53 @@
+{
+  "baslik": "Arbeitsunfähigkeitsbescheinigung: İşe Gidemedin mi?",
+  "kapak_emoji": "🇩🇪",
+  "slaytlar": [
+    "Arbeitsunfähigkeitsbescheinigung (AU) hastalık belgesidir. Hasta olduğunda doktor tarafından verilir ve işveren ile sigorta şirketine gönderilir. 📄",
+    "Doktora gittin ve 3 günden fazla hasta kalacaksın? İlk gün haber ver, 4. gün belgeni işverene gönder. Bazı işverenlerin kuralı farklı olabilir, kontraktını kontrol et. 📋",
+    "AU belgesinde tanı yazılmayabilir. Doktor başında veya daha sonra tanı açıklamayabilir - bu gizlilik hakkındır. İşveren sadece hasta olduğunu bilmesi yeterli. 🔒",
+    "Belge göndermezsen yasadışıdır. Gerekli sürede işverene ulaştırmazsan para cezasına çarptırılabilirsin. Tavsiye: Tasdikli mektup (Einschreiben) yolla. ⚠️",
+    "Belge sahibi (kağıt ve dijital) olması gerekir. Elektronik (eAU) sistem de var ama henüz tüm doktorlar kullanmıyor. Doktorunla kontrol et. ✅"
+  ],
+  "emojiler": [
+    "📄",
+    "📋",
+    "🔒",
+    "⚠️",
+    "✅"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Hastalık Belgesi: Bilmen Gerekenler",
+    "sahneler": [
+      "Hasta oldun, doktora gidip AU aldın - peki sonra ne yapacaksın?",
+      "AU = Arbeitsunfähigkeitsbescheinigung. Başka türlü: hastalık belgesi, doktor yazısı.",
+      "3 gün hasta kalırsan genelde doktor belgesi gerekli. 4. gün işverene tasdikli posta ile gönder.",
+      "Uyarı: Belge göndermemek yasadışı! Ceza yiyebilirsin. Hep bir kopya sakla.",
+      "Dikkat: Tanı yazılmayabilir. Ama işveren bunu istemeyebilir - gizlilik hakkı var.",
+      "Doktoruna sor: eAU (dijital) imkanı var mı? Ama kağıt da geçerli. Bilgini paylaş!"
+    ],
+    "cta": "Daha fazla bilgi için profili ziyaret et! 👉"
+  },
+  "story": {
+    "baslik": "Sana AU lazım mı?",
+    "metin": "Almanya'da hastalandığında AU belgesini kaç gün sonra işverene göndermelisin?",
+    "anket": [
+      "1. gün hemen",
+      "3-4. gün sonra"
+    ]
+  },
+  "caption": "Almanya'da hasta oldum diye işe gidemiyorum dersen, doktor belgesi (AU) lazım. İşin gereği, resmiyet gereği - bu yazıyı kaydedip işverene danış. Senin sağlığın önemli ama kuralları da bil! 👇 Yorum yap: AU'yu ilk kez mı duyuyorsun?",
+  "hashtagler": [
+    "#Almanya",
+    "#AlmanyadaYaşam",
+    "#AlmanyadaNasılYapılır",
+    "#Arbeitsunfähigkeitsbescheinigung",
+    "#AU",
+    "#HastalıkBelgesi",
+    "#AlmanHukuku",
+    "#İşverilen",
+    "#TürkAlmanya",
+    "#AlmanyadaPratikBilgi"
+  ],
+  "konu": "Almanya'da Arbeitsunfähigkeitsbescheinigung nedir",
+  "tarih": "2026-08-19_08-00-27"
+}
