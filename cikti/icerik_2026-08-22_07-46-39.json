@@ -1,0 +1,53 @@
+{
+  "baslik": "TV-L Maaş Sistemi Adım Adım",
+  "kapak_emoji": "💼",
+  "slaytlar": [
+    "TV-L, Almanya'daki kamu sektörü çalışanlarının maaş tarifesidir. Özel şirketlerde değil, devlet kurumlarında uygulanır.",
+    "12 seviye (E1'den E15'e) vardır. Hangi seviyeye girdiğin eğitim, deneyim ve iş türüne bağlıdır.",
+    "Her seviyenin içinde yıllar geçtikçe artan basamaklar vardır. Deneyimle maaşın otomatik olarak arttığı anlamına gelir.",
+    "Maaş her yıl ocak ayında resmi olarak güncellenir. Sendikalar ve hükümet arasındaki müzakerelerle belirlenir.",
+    "TV-L dışında ek ödemeler de olabilir: yılbaşı ikramiyesi, tatil parası ve aile yardımı gibi. İşveren tarafından belirlenir."
+  ],
+  "emojiler": [
+    "📋",
+    "🎓",
+    "📈",
+    "📅",
+    "💰"
+  ],
+  "reel": {
+    "baslik": "TV-L Maaş Sistemi: Bilmen Gerekenler",
+    "sahneler": [
+      "Almanya'da kamu işçisiyseniz TV-L tarifesi altındasınız. Ama bu ne demek?",
+      "TV-L: 12 farklı seviye, her seviyede yıllık artış. Eğitim ve iş türüne göre seviyen belirli.",
+      "E1'den E15'e kadar gidiliyor. Mühendis falan olsan E10-E13 arası olursun mesela.",
+      "Maaş otomatik artıyor mu? Evet! Her yıl deneyimle birlikte, sendika görüşmeleriyle zam geliyor.",
+      "Yanında bonus var: Yılbaşı ikramiyesi, 13. maaş, tatil parası... İşveren tarafından değişebilir.",
+      "Kesin rakamlar için işverenin maaş tablosunu kontrol et. Şehirden şehire küçük farklar olabilir."
+    ],
+    "cta": "Profilini takip et, TV-L hakkında daha fazla bilgi için! 📌"
+  },
+  "story": {
+    "baslik": "TV-L Maaşı Hakkında Bilgin Var mı?",
+    "metin": "Almanya'da kamu sektöründe çalışıyor musun?",
+    "anket": [
+      "Evet, TV-L altındayım",
+      "Hayır / Bilmiyorum"
+    ]
+  },
+  "caption": "TV-L sistemi ilk başta karmaşık görünüyor ama aslında oldukça sistematik. Kamu işçisi olacaksan bu tarifenin nasıl çalıştığını bilmen çok önemli. Seviye, deneyim basamakları ve yıllık zamlara dikkat et! 💼 Senin TV-L seviyesi ne? Yorum yap ya da bunu Almanya'da yeni birinin bulabileceği birine gönder! 👇",
+  "hashtagler": [
+    "#tvl",
+    "#almanyamaaş",
+    "#ksektor",
+    "#almanyaişi",
+    "#tvltarife",
+    "#almanyadayasam",
+    "#almanyadanasilyapilir",
+    "#gercekbilgi",
+    "#almanyaişiçin",
+    "#deutscüberalles"
+  ],
+  "konu": "Almanya'da TV-L maaş sistemi nasıl çalışır",
+  "tarih": "2026-08-22_07-46-39"
+}
