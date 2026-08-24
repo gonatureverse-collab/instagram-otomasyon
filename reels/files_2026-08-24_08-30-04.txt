@@ -1,0 +1,13 @@
+file '/home/runner/work/instagram-otomasyon/instagram-otomasyon/gorseller/2026-08-24_08-30-04/01_kapak.png'
+duration 6.717823166666666
+file '/home/runner/work/instagram-otomasyon/instagram-otomasyon/gorseller/2026-08-24_08-30-04/02_slayt.png'
+duration 6.717823166666666
+file '/home/runner/work/instagram-otomasyon/instagram-otomasyon/gorseller/2026-08-24_08-30-04/03_slayt.png'
+duration 6.717823166666666
+file '/home/runner/work/instagram-otomasyon/instagram-otomasyon/gorseller/2026-08-24_08-30-04/04_slayt.png'
+duration 6.717823166666666
+file '/home/runner/work/instagram-otomasyon/instagram-otomasyon/gorseller/2026-08-24_08-30-04/05_slayt.png'
+duration 6.717823166666666
+file '/home/runner/work/instagram-otomasyon/instagram-otomasyon/gorseller/2026-08-24_08-30-04/06_slayt.png'
+duration 6.717823166666666
+file '/home/runner/work/instagram-otomasyon/instagram-otomasyon/gorseller/2026-08-24_08-30-04/06_slayt.png'
