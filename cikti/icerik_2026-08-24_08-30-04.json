@@ -1,0 +1,53 @@
+{
+  "baslik": "Elterngeld Başvurusu: Adım Adım Rehber",
+  "kapak_emoji": "👶",
+  "slaytlar": [
+    "Elterngeld, Almanya'da doğum sonrası ebeveynlere verilen sosyal yardım. Başvurmak için adımları öğren.",
+    "1. ADIM: Çocuğun doğumundan sonra ilgili iş ve sosyal yardım ofisine (Arbeitsagentur) başvuru yap.",
+    "2. ADIM: Gerekli belgeler: Kimlik, doğum belgesi, iş sözleşmesi, son maaş bordrosu, vergi beyannamesi.",
+    "3. ADIM: Form FM 600 (veya dijital sistem) doldur. Almanca bilmiyorsan tercüman veya danışman yardımı iste.",
+    "4. ADIM: Başvurunun durumunu takip et. Karar genellikle 4-6 hafta içinde verilir."
+  ],
+  "emojiler": [
+    "📋",
+    "🏛️",
+    "📸",
+    "💻",
+    "⏳"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Elterngeld Nasıl Alınır?",
+    "sahneler": [
+      "Elterngeld almak istiyorsun ama nereden başlayacağını bilmiyorsun mu? Merak etme!",
+      "Çocuğun doğumundan sonra hemen Arbeitsagentur'a başvur. Ne kadar erken, o kadar iyi!",
+      "Kimlik, doğum belgesi, maaş bordrosu gibi belgeler topla. Hepsini hazırla.",
+      "Online veya şubede FM 600 formunu doldur. Almanca yoksa tercüman isteyebilirsin.",
+      "Başvurun 4-6 hafta içinde değerlendirilir. Merak etme, süreci takip edebilirsin!",
+      "Hala sorun mu var? Arbeitsagentur'a direkt sor, her zaman yardımcı olurlar!"
+    ],
+    "cta": "Başvuru formunu indirmek için Arbeitsagentur.de'yi ziyaret et. Kaydı al, paylaş, yorum yap!"
+  },
+  "story": {
+    "baslik": "Elterngeld Hakkında Bilgi Sahibi misin?",
+    "metin": "Almanya'da Elterngeld başvurusu konusunda kendin kaç puan verirsin? 🤔",
+    "anket": [
+      "Biliyorum, başladım zaten ✅",
+      "Bilmiyorum, merak ediyorum 🤷"
+    ]
+  },
+  "caption": "Almanya'da bebek sahibi olmak demek, Elterngeld almak demek! 👶 Başvuru süreci basit olabilir eğer doğru adımları takip edersen. Tüm detayları carousel'de bulabilirsin. Bu içeriği kaydet, paylaş ve Arbeitsagentur'a başvur. Soruların varsa yorumda sor! 💬 #YöneticinÖneriyor",
+  "hashtagler": [
+    "#almanya",
+    "#elterngeld",
+    "#bebek",
+    "#almanyadayasam",
+    "#almanyadanasilyapilir",
+    "#annebabaolmak",
+    "#arbeitsagentur",
+    "#turkcedealmanya",
+    "#rehber",
+    "#praktikbilgi"
+  ],
+  "konu": "Almanya'da Elterngeld başvurusu nasıl yapılır",
+  "tarih": "2026-08-24_08-30-04"
+}
