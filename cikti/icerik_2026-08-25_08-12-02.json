@@ -1,0 +1,53 @@
+{
+  "baslik": "Entegrasyon Kursuna Kayıt Ol",
+  "kapak_emoji": "🇩🇪",
+  "slaytlar": [
+    "Entegrasyon kursu Almanya'da yaşayan herkes için önemli bir adımdır. Dil öğrenirken aynı zamanda kültür ve yasalar hakkında da bilgi alırsın. 📚",
+    "İlk adım: BAMF (Bundesamt für Migration und Flüchtlinge) internet sitesini ziyaret et. Buradan resmi başvuru sistemine ulaşabilirsin. 🖥️",
+    "Başvuru için gereken belgeler: kimlik belgesi, ikamet izni ve BAMF tarafından gönderilen davet mektubu (eğer varsa). Her duruma göre değişebilir. 📋",
+    "Kursu bitirdikten sonra sertifika alırsın. Bu sertifika iş başvurularında veya uzun dönem ikamet izni uzatmasında faydalı olabilir. ✅",
+    "Başvurmadan önce yerel Integrationskurs sağlayıcısını kontrol et. BAMF sitesinde kurs sağlayıcılarını bulabilirsin. 🔍"
+  ],
+  "emojiler": [
+    "📚",
+    "🖥️",
+    "📋",
+    "✅",
+    "🔍"
+  ],
+  "reel": {
+    "baslik": "Entegrasyon Kursu Kayıt Süreci",
+    "sahneler": [
+      "Almanya'da yaşıyorsan entegrasyon kursu sana kapıları açabilir!",
+      "Adım 1: BAMF'ün resmi sitesine git ve kayıt formunu doldur.",
+      "Adım 2: Kimlik belgesi ve ikamet izninle birlikte gerekli belgeleri hazırla.",
+      "Adım 3: Davet mektubunu bekle ve kurs sağlayıcısını seç.",
+      "Adım 4: Kursa başla, dil ve kültür öğren!",
+      "Detaylı bilgi için profilimizi takip et ve birkaç ay içinde kursu bitir! 🎯"
+    ],
+    "cta": "Kaydınızı yapın ve yorum bölümünde sorularınızı sorun!"
+  },
+  "story": {
+    "baslik": "Entegrasyon Kursu Hakkında",
+    "metin": "Sen daha önce entegrasyon kursuna katıldın mı?",
+    "anket": [
+      "Evet, tamamladım ✅",
+      "Henüz başlamadım 🆕"
+    ]
+  },
+  "caption": "Almanya'da yeni mi başladın? Entegrasyon kursu sana dil öğrenirken kültür ve yasalar hakkında bilgi verir. 🇩🇪 BAMF sitesinden resmi bilgi alarak başvuru yapabilirsin. Her adım önemli—bu rehberi kaydet ve arkadaşlarınla paylaş! Sorularınız varsa yorum yazın. 👇",
+  "hashtagler": [
+    "#almanya",
+    "#entegrationskurs",
+    "#deutschlernen",
+    "#almanyadayasam",
+    "#BAMF",
+    "#göçmen",
+    "#kurslar",
+    "#almanyadanasilyapilir",
+    "#yenibaşlayan",
+    "#deutschkurs"
+  ],
+  "konu": "Almanya'da entegrasyon kursuna nasıl kayıt olunur",
+  "tarih": "2026-08-25_08-12-02"
+}
