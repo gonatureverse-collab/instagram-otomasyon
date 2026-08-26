@@ -1,0 +1,55 @@
+{
+  "baslik": "Almanya'da Elektrikli Araba Şarj Nasıl Yapılır?",
+  "kapak_emoji": "🔌",
+  "slaytlar": [
+    "Almanya'da elektrikli arabaların şarj edilmesi kolay ve düzenli. Hemen öğrenin! ⚡",
+    "Evde şarj: Wallbox (duvar şarj cihazı) kurturun. Elektrik gücüne göre 3-11 saatte dolar. 🏠",
+    "Genel şarj istasyonları: Otopark, AVM ve benzin istasyonlarında bulunur. App üzerinden bul. 📱",
+    "Şarj ücretleri: İstasyona göre değişir (0,30-0,60€/kWh). Abonelik paketleri daha ucuz. 💶",
+    "Hızlı şarj: DC şarjlarda 20-30 dakikada %80'e ulaş. Ama pil ömrü için sık kullanma. ⚡",
+    "Uygulamalar: PlugShare, Chargemap, A Better Route Planner gibi uygulamalarla istasyon bul. 🗺️"
+  ],
+  "emojiler": [
+    "🏠",
+    "📱",
+    "💶",
+    "⚡",
+    "🗺️",
+    "✅"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Elektrikli Araba Şarj Etmek Bu Kadar Basit!",
+    "sahneler": [
+      "Almanya'da elektrikli arabanız var ama nasıl şarj edeceğinizi bilmiyor musunuz?",
+      "Evde wallbox kurtarın - ücretsiz kurulum desteği bile var. Yavaş ama güvenli.",
+      "Dışarıda mı şarj etmek istiyorsunuz? Otopark ve AVM'lerde istasyonlar bulunuyor.",
+      "Uygulamalar açıp en yakın istasyonu bulun. Ücretsiz ve ücretli seçenekler var.",
+      "Acele ediyorsanız DC hızlı şarj kullanın. 30 dakikada çoğu araç hazır olur.",
+      "İşte bu kadar! Almanya'da elektrik şarj cidden kolay. Siz nasıl şarj ediyorsunuz?"
+    ],
+    "cta": "Deneyiminizi yorumlarda paylaşın! 👇"
+  },
+  "story": {
+    "baslik": "Sen Hangi Yöntemi Kullanıyorsun?",
+    "metin": "Almanya'da elektrikli arabanı nasıl şarj ediyorsun?",
+    "anket": [
+      "Evde Wallbox 🏠",
+      "Dışarı İstasyonları 📍"
+    ]
+  },
+  "caption": "Almanya'da elektrikli araba şarj etmek sandığınızdan çok daha basit! Evde wallbox kurmaktan tutun da dışarıdaki istasyonları bulana kadar her şeyi adım adım anlattık. Hangi yöntemi siz kullanıyorsunuz? Yorum yazın, kaydedin ve arkadaşınıza paylaşın! 🔌⚡",
+  "hashtagler": [
+    "#almanya",
+    "#elektrikliaraba",
+    "#ev",
+    "#almanyadadayasam",
+    "#seyahat",
+    "#wallbox",
+    "#şarj",
+    "#teknoloji",
+    "#almanyanasilyapilir",
+    "#türkler"
+  ],
+  "konu": "Almanya'da elektrikli araba şarj nasıl yapılır",
+  "tarih": "2026-08-26_08-11-19"
+}
