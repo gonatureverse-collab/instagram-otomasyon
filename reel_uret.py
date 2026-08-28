@@ -271,9 +271,9 @@ def ses_uret(icerik, tarih):
 
     # SSML içine giren metni XML açısından güvenli hale getir.
     # Örn. &, <, > karakterleri Azure'da 400 hatasına yol açabilir.
- metin_temiz = emoji_temizle(metin)
+    metin_temiz = emoji_temizle(metin)
 
-guvenli_metin = html.escape(
+    guvenli_metin = html.escape(
     metin_temiz,
     quote=False
 )
