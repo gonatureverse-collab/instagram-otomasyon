@@ -26,7 +26,7 @@ AZURE_TTS_ENDPOINT = os.environ["AZURE_TTS_ENDPOINT"]
 AZURE_TTS_REGION = os.environ["AZURE_TTS_REGION"]
 
 # Türkçe Ses
-AZURE_TTS_VOICE = "tr-TR-AhmetNeura"
+AZURE_TTS_VOICE = "tr-TR-AhmetNeural"
 
 # Instagram API
 API_SURUM = "v21.0"
