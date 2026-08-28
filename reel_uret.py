@@ -1,6 +1,8 @@
 import os
 import json
 import requests
+import html
+import re
 import subprocess
 import time
 from pathlib import Path
@@ -97,6 +99,47 @@ def gorsel_klasoru_bul(tarih):
 # REEL SESLENDİRME METNİNİ HAZIRLA
 # ============================================================
 
+def emoji_temizle(metin):
+    """
+    Azure TTS'e gönderilmeden önce emoji ve görsel sembolleri temizler.
+
+    ÖNEMLİ:
+    - Instagram/Reels üzerindeki orijinal metin değişmez.
+    - Sadece seslendirme için kullanılan metin temizlenir.
+    - Türkçe harfler, rakamlar ve normal noktalama işaretleri korunur.
+    """
+
+    emoji_pattern = re.compile(
+        "["
+        "\U0001F1E0-\U0001F1FF"  # Bayraklar
+        "\U0001F300-\U0001F5FF"  # Semboller ve piktogramlar
+        "\U0001F600-\U0001F64F"  # Suratlar
+        "\U0001F680-\U0001F6FF"  # Taşıtlar
+        "\U0001F700-\U0001F77F"
+        "\U0001F780-\U0001F7FF"
+        "\U0001F800-\U0001F8FF"
+        "\U0001F900-\U0001F9FF"  # Ek emoji
+        "\U0001FA00-\U0001FAFF"  # Yeni emoji
+        "\U0001FAD0-\U0001FAFF"  # Ek semboller
+        "\u2600-\u26FF"          # Çeşitli semboller
+        "\u2700-\u27BF"          # Dingbat sembolleri
+        "\u2300-\u23FF"          # Teknik semboller
+        "\u2B00-\u2BFF"          # Oklar ve semboller
+        "\uFE0E-\uFE0F"          # Variation selector
+        "\u200D"                 # Zero-width joiner
+        "\u20E3"                 # Keycap combining
+        "]+",
+        flags=re.UNICODE
+    )
+
+    temiz = emoji_pattern.sub("", str(metin))
+
+    # Emoji temizlendikten sonra oluşabilecek fazla boşlukları düzelt
+    temiz = re.sub(r"\s+", " ", temiz).strip()
+
+    return temiz
+
+
 def reel_ses_metni_olustur(icerik):
 
     reel = icerik.get("reel")
@@ -151,7 +194,24 @@ def reel_ses_metni_olustur(icerik):
             "Seslendirme için kullanılabilecek metin bulunamadı."
         )
 
-    return metin
+    # ========================================================
+    # TTS İÇİN EMOJİLERİ / GÖRSEL SİMGELERİ TEMİZLE
+    # ========================================================
+    # Bu işlem sadece Azure'a gönderilecek ses metnine uygulanır.
+    # Instagram'daki görsel/metin içeriği değişmez.
+    tts_metin = emoji_temizle(metin)
+
+    if not tts_metin.strip():
+
+        raise ValueError(
+            "Emoji temizlendikten sonra seslendirme metni boş kaldı."
+        )
+
+    print(
+        f"TTS metni (emoji temizlenmiş): {tts_metin[:150]}..."
+    )
+
+    return tts_metin
 
 
 # ============================================================
@@ -204,29 +264,55 @@ def ses_uret(icerik, tarih):
     # Azure TTS API
     # ========================================================
 
-    url = (
-        f"{AZURE_TTS_ENDPOINT}cognitiveservices/v1"
-    )
+    # Azure endpoint'i güvenli şekilde oluştur
+    # .env içinde endpoint'in sonunda / olsa da olmasa da çalışır.
+    azure_endpoint = AZURE_TTS_ENDPOINT.rstrip("/")
+
+    if azure_endpoint.endswith("/cognitiveservices/v1"):
+        url = azure_endpoint
+    else:
+        url = f"{azure_endpoint}/cognitiveservices/v1"
 
     headers = {
         "Ocp-Apim-Subscription-Key": AZURE_TTS_KEY,
-        "Content-Type": "application/ssml+xml",
+        "Content-Type": "application/ssml+xml; charset=utf-8",
         "X-Microsoft-OutputFormat": "audio-16khz-32kbitrate-mono-mp3",
+        "User-Agent": "AlmanyadaNasilYapilir-Reel-Automation",
     }
 
+    # SSML içine giren metni XML açısından güvenli hale getir.
+    # Örn. &, <, > karakterleri Azure'da 400 hatasına yol açabilir.
+    guvenli_metin = html.escape(
+        metin,
+        quote=False
+    )
+
     # SSML (Speech Synthesis Markup Language)
-    ssml = f"""<speak version='1.0' xml:lang='tr-TR'>
-    <voice name='{AZURE_TTS_VOICE}'>
-        {metin}
+    ssml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<speak version="1.0"
+       xmlns="http://www.w3.org/2001/10/synthesis"
+       xml:lang="tr-TR">
+    <voice name="{AZURE_TTS_VOICE}">
+        {guvenli_metin}
     </voice>
 </speak>"""
+
+    print(
+        f"Azure TTS endpoint: {url}"
+    )
+    print(
+        f"Azure TTS voice: {AZURE_TTS_VOICE}"
+    )
+    print(
+        "SSML hazır, Azure'a gönderiliyor..."
+    )
 
     try:
 
         yanit = requests.post(
             url,
             headers=headers,
-            data=ssml.encode('utf-8'),
+            data=ssml.encode("utf-8"),
             timeout=180
         )
 
@@ -248,7 +334,31 @@ def ses_uret(icerik, tarih):
         )
 
         print(
+            "Azure cevap gövdesi:"
+        )
+        print(
             yanit.text
+        )
+
+        print(
+            "Azure response headers:"
+        )
+        print(
+            dict(yanit.headers)
+        )
+
+        print(
+            "Kullanılan TTS endpoint:"
+        )
+        print(
+            url
+        )
+
+        print(
+            "Kullanılan ses:"
+        )
+        print(
+            AZURE_TTS_VOICE
         )
 
         yanit.raise_for_status()
