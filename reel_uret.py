@@ -101,37 +101,33 @@ def gorsel_klasoru_bul(tarih):
 
 def emoji_temizle(metin):
     """
-    Tüm emojileri, sembolleri ve kontrol karakterlerini kaldırır.
-    SADECE TUT: ASCII, Türkçe harfleri, boşluk, noktalama.
+    SADECE ASCII + Türkçe harfleri tutar.
+    HER ŞEY BAŞKA: silinir (emoji, sembol, Unicode).
     """
     import unicodedata
     
-    # HTML entities'i decode et
     metin = html.unescape(metin)
-    
-    temiz = []
+    temiz = ""
     
     for char in metin:
+        code = ord(char)
         
-        # ASCII karakterleri tut (0-127)
-        if ord(char) < 128:
-            temiz.append(char)
+        # ASCII: 32-126 (normal karakterler)
+        if 32 <= code <= 126:
+            temiz += char
         
-        # Türkçe harfleri tut
-        elif char in 'çğıöşüÇĞİÖŞÜ':
-            temiz.append(char)
+        # Türkçe harfleri ve ş,ç,ğ,ı,ö,ü versiyonları
+        elif char in 'abcçdefgğhıijklmnoöprsştuüvyzABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZäöüßÄÖÜ\n\t ':
+            temiz += char
         
-        # Boşluk, noktalama işaretlerini tut
-        elif unicodedata.category(char) in ('Zs', 'Po', 'Ps', 'Pe'):
-            temiz.append(char)
+        # Sadece boşluk / satır sonu / tab
+        elif code in (9, 10, 13, 32):
+            temiz += char
     
-    metin = ''.join(temiz)
+    # Fazla boşluk
+    temiz = re.sub(r'\s+', ' ', temiz).strip()
     
-    # Fazla boşlukları temizle
-    metin = re.sub(r'\s+', ' ', metin).strip()
-    
-    return metin
-
+    return temiz
 
 def reel_ses_metni_olustur(icerik):
 
