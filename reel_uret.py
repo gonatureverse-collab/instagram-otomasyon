@@ -101,15 +101,31 @@ def gorsel_klasoru_bul(tarih):
 
 def emoji_temizle(metin):
     """
-    Azure TTS'e gönderilmeden önce BÜTÜN emojileri ve sembolleri temizler.
-    SADECE TUT: ASCII, Türkçe harfleri, rakamlar, boşluk, noktalama.
+    Tüm emojileri, sembolleri ve kontrol karakterlerini kaldırır.
+    SADECE TUT: ASCII, Türkçe harfleri, boşluk, noktalama.
     """
-    # Sadece izin verilen karakterleri tut
-    metin = re.sub(
-        r'[^A-Za-z0-9\s.,!?;:\'\"-çğıöşüÇĞİÖŞÜ]',
-        '',
-        metin
-    )
+    import unicodedata
+    
+    # HTML entities'i decode et
+    metin = html.unescape(metin)
+    
+    temiz = []
+    
+    for char in metin:
+        
+        # ASCII karakterleri tut (0-127)
+        if ord(char) < 128:
+            temiz.append(char)
+        
+        # Türkçe harfleri tut
+        elif char in 'çğıöşüÇĞİÖŞÜ':
+            temiz.append(char)
+        
+        # Boşluk, noktalama işaretlerini tut
+        elif unicodedata.category(char) in ('Zs', 'Po', 'Ps', 'Pe'):
+            temiz.append(char)
+    
+    metin = ''.join(temiz)
     
     # Fazla boşlukları temizle
     metin = re.sub(r'\s+', ' ', metin).strip()
