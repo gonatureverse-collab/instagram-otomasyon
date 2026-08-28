@@ -101,30 +101,21 @@ def gorsel_klasoru_bul(tarih):
 
 def emoji_temizle(metin):
     """
-    SADECE ASCII + Türkçe harfleri tutar.
-    HER ŞEY BAŞKA: silinir (emoji, sembol, Unicode).
+    SADECE izin verilen karakterleri tutar.
+    HER ŞEY BAŞKA silinir (tüm emojiler, semboller, Unicode).
     """
-    import unicodedata
+    # İzin verilen karakterler: A-Z, a-z, 0-9, Türkçe, boşluk, noktalama
+    izin_verilen = set(
+        'abcçdefgğhıijklmnoöprsştuüvyzABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ0123456789 .,!?;:\'"-'
+    )
     
-    metin = html.unescape(metin)
-    temiz = ""
+    # Sadece izin verilen karakterleri tut
+    temiz = ''.join(
+        char for char in metin 
+        if char in izin_verilen
+    )
     
-    for char in metin:
-        code = ord(char)
-        
-        # ASCII: 32-126 (normal karakterler)
-        if 32 <= code <= 126:
-            temiz += char
-        
-        # Türkçe harfleri ve ş,ç,ğ,ı,ö,ü versiyonları
-        elif char in 'abcçdefgğhıijklmnoöprsştuüvyzABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZäöüßÄÖÜ\n\t ':
-            temiz += char
-        
-        # Sadece boşluk / satır sonu / tab
-        elif code in (9, 10, 13, 32):
-            temiz += char
-    
-    # Fazla boşluk
+    # Fazla boşlukları temizle
     temiz = re.sub(r'\s+', ' ', temiz).strip()
     
     return temiz
