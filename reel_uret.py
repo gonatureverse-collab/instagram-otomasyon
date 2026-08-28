@@ -3,10 +3,8 @@ import json
 import requests
 import subprocess
 import time
-
 from pathlib import Path
 from dotenv import load_dotenv
-
 
 # ============================================================
 # AYARLAR
@@ -22,17 +20,13 @@ IG_USER_ID = os.environ["INSTAGRAM_BUSINESS_ACCOUNT_ID"]
 GITHUB_USERNAME = os.environ["GITHUB_USERNAME"]
 GITHUB_REPO = os.environ["GITHUB_REPO"]
 
-# ElevenLabs
-ELEVENLABS_API_KEY = os.environ["ELEVENLABS_API_KEY"]
+# Azure TTS
+AZURE_TTS_KEY = os.environ["AZURE_TTS_KEY"]
+AZURE_TTS_ENDPOINT = os.environ["AZURE_TTS_ENDPOINT"]
+AZURE_TTS_REGION = os.environ["AZURE_TTS_REGION"]
 
-# Sabit kullanılacak ses
-ELEVENLABS_VOICE_ID = "JBFqnCBsd6RMkjVDRZzb"
-
-# Model
-ELEVENLABS_MODEL_ID = "eleven_multilingual_v2"
-
-# MP3 formatı
-ELEVENLABS_OUTPUT_FORMAT = "mp3_44100_128"
+# Türkçe Ses
+AZURE_TTS_VOICE = "tr-TR-Cem"
 
 # Instagram API
 API_SURUM = "v21.0"
@@ -64,6 +58,7 @@ def son_icerik_dosyasi():
     )
 
     if not dosyalar:
+
         raise FileNotFoundError(
             "cikti/ klasöründe içerik dosyası bulunamadı."
         )
@@ -107,6 +102,7 @@ def reel_ses_metni_olustur(icerik):
     reel = icerik.get("reel")
 
     if not reel:
+
         raise ValueError(
             "İçerik JSON dosyasında 'reel' bölümü bulunamadı."
         )
@@ -117,6 +113,7 @@ def reel_ses_metni_olustur(icerik):
     )
 
     if not sahneler:
+
         raise ValueError(
             "Reel içerisinde 'sahneler' bulunamadı."
         )
@@ -158,7 +155,7 @@ def reel_ses_metni_olustur(icerik):
 
 
 # ============================================================
-# ELEVENLABS TÜRKÇE SES ÜRET
+# AZURE TTS TÜRKÇE SES OLUŞTUR
 # ============================================================
 
 def ses_uret(icerik, tarih):
@@ -192,66 +189,62 @@ def ses_uret(icerik, tarih):
 
     print()
     print(
-        "ElevenLabs ile Türkçe seslendirme oluşturuluyor..."
+        "Azure TTS ile Türkçe seslendirme oluşturuluyor..."
     )
 
     print(
-        f"Voice ID: {ELEVENLABS_VOICE_ID}"
+        f"Ses: {AZURE_TTS_VOICE}"
     )
 
     print(
-        f"Model: {ELEVENLABS_MODEL_ID}"
+        f"Metin: {metin[:100]}..."
     )
 
-    print(
-        f"Seslendirme metni: {metin}"
-    )
+    # ========================================================
+    # Azure TTS API
+    # ========================================================
 
     url = (
-        "https://api.elevenlabs.io/v1/text-to-speech/"
-        f"{ELEVENLABS_VOICE_ID}"
+        f"{AZURE_TTS_ENDPOINT}cognitiveservices/v1"
     )
 
-    params = {
-        "output_format": ELEVENLABS_OUTPUT_FORMAT
-    }
-
     headers = {
-        "xi-api-key": ELEVENLABS_API_KEY,
-        "Content-Type": "application/json",
-        "Accept": "audio/mpeg",
+        "Ocp-Apim-Subscription-Key": AZURE_TTS_KEY,
+        "Content-Type": "application/ssml+xml",
+        "X-Microsoft-OutputFormat": "audio-16khz-32kbitrate-mono-mp3",
     }
 
-    data = {
-        "text": metin,
-        "model_id": ELEVENLABS_MODEL_ID,
-    }
+    # SSML (Speech Synthesis Markup Language)
+    ssml = f"""<speak version='1.0' xml:lang='tr-TR'>
+    <voice name='{AZURE_TTS_VOICE}'>
+        {metin}
+    </voice>
+</speak>"""
 
     try:
 
         yanit = requests.post(
             url,
-            params=params,
             headers=headers,
-            json=data,
+            data=ssml.encode('utf-8'),
             timeout=180
         )
 
     except requests.RequestException as hata:
 
         raise RuntimeError(
-            f"ElevenLabs bağlantı hatası: {hata}"
+            f"Azure TTS bağlantı hatası: {hata}"
         )
 
     print(
-        f"ElevenLabs HTTP durumu: {yanit.status_code}"
+        f"Azure HTTP durumu: {yanit.status_code}"
     )
 
     if not yanit.ok:
 
         print()
         print(
-            "❌ ELEVENLABS HATASI"
+            "❌ AZURE TTS HATASI"
         )
 
         print(
@@ -263,7 +256,7 @@ def ses_uret(icerik, tarih):
     if not yanit.content:
 
         raise RuntimeError(
-            "ElevenLabs başarılı cevap verdi ancak ses verisi boş."
+            "Azure başarılı cevap verdi ancak ses verisi boş."
         )
 
     # MP3 kaydet
@@ -276,7 +269,7 @@ def ses_uret(icerik, tarih):
             yanit.content
         )
 
-    # Dosya kontrolü
+    # Kontrol
     if not ses_yolu.exists():
 
         raise FileNotFoundError(
@@ -290,7 +283,7 @@ def ses_uret(icerik, tarih):
     if dosya_boyutu == 0:
 
         raise RuntimeError(
-            "ElevenLabs ses dosyası 0 byte oluştu."
+            "Azure ses dosyası 0 byte oluştu."
         )
 
     print(
@@ -418,9 +411,6 @@ def video_uret(
     # Her görsel için süre
     # --------------------------------------------------------
 
-    # Ses daha uzunsa görseller otomatik olarak uzar.
-    # Çok kısa seslerde ise her görsel en az 2 saniye kalır.
-
     minimum_video_suresi = (
         len(png_dosyalari)
         * SLAYT_SURESI
@@ -498,6 +488,7 @@ def video_uret(
     try:
 
         ffmpeg_kontrol = subprocess.run(
+
             [
                 "ffmpeg",
                 "-version"
@@ -566,7 +557,6 @@ def video_uret(
         "-b:a",
         "128k",
 
-        # Ses daha kısa ise videonun geri kalanını sessizlikle doldur.
         "-af",
         "apad",
 
@@ -635,7 +625,6 @@ def reel_github_ye_gonder(video_yolu):
                 "fetch",
                 "origin"
             ],
-
             check=True
         )
 
@@ -645,7 +634,6 @@ def reel_github_ye_gonder(video_yolu):
                 "add",
                 "reels/"
             ],
-
             check=True
         )
 
@@ -703,7 +691,6 @@ def reel_github_ye_gonder(video_yolu):
                 "origin",
                 "main"
             ],
-
             check=True
         )
 
@@ -1121,7 +1108,7 @@ def main():
     )
 
     # --------------------------------------------------------
-    # 5. ElevenLabs ses üret
+    # 5. AZURE TTS ses üret
     # --------------------------------------------------------
 
     ses_yolu = (
