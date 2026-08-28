@@ -101,43 +101,20 @@ def gorsel_klasoru_bul(tarih):
 
 def emoji_temizle(metin):
     """
-    Azure TTS'e gönderilmeden önce emoji ve görsel sembolleri temizler.
-
-    ÖNEMLİ:
-    - Instagram/Reels üzerindeki orijinal metin değişmez.
-    - Sadece seslendirme için kullanılan metin temizlenir.
-    - Türkçe harfler, rakamlar ve normal noktalama işaretleri korunur.
+    Azure TTS'e gönderilmeden önce BÜTÜN emojileri ve sembolleri temizler.
+    SADECE TUT: ASCII, Türkçe harfleri, rakamlar, boşluk, noktalama.
     """
-
-    emoji_pattern = re.compile(
-        "["
-        "\U0001F1E0-\U0001F1FF"  # Bayraklar
-        "\U0001F300-\U0001F5FF"  # Semboller ve piktogramlar
-        "\U0001F600-\U0001F64F"  # Suratlar
-        "\U0001F680-\U0001F6FF"  # Taşıtlar
-        "\U0001F700-\U0001F77F"
-        "\U0001F780-\U0001F7FF"
-        "\U0001F800-\U0001F8FF"
-        "\U0001F900-\U0001F9FF"  # Ek emoji
-        "\U0001FA00-\U0001FAFF"  # Yeni emoji
-        "\U0001FAD0-\U0001FAFF"  # Ek semboller
-        "\u2600-\u26FF"          # Çeşitli semboller
-        "\u2700-\u27BF"          # Dingbat sembolleri
-        "\u2300-\u23FF"          # Teknik semboller
-        "\u2B00-\u2BFF"          # Oklar ve semboller
-        "\uFE0E-\uFE0F"          # Variation selector
-        "\u200D"                 # Zero-width joiner
-        "\u20E3"                 # Keycap combining
-        "]+",
-        flags=re.UNICODE
+    # Sadece izin verilen karakterleri tut
+    metin = re.sub(
+        r'[^A-Za-z0-9\s.,!?;:\'\"-çğıöşüÇĞİÖŞÜ]',
+        '',
+        metin
     )
-
-    temiz = emoji_pattern.sub("", str(metin))
-
-    # Emoji temizlendikten sonra oluşabilecek fazla boşlukları düzelt
-    temiz = re.sub(r"\s+", " ", temiz).strip()
-
-    return temiz
+    
+    # Fazla boşlukları temizle
+    metin = re.sub(r'\s+', ' ', metin).strip()
+    
+    return metin
 
 
 def reel_ses_metni_olustur(icerik):
