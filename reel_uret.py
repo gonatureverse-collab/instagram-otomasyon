@@ -169,29 +169,22 @@ def reel_ses_metni_olustur(icerik):
     )
 
     if not metin.strip():
-
         raise ValueError(
             "Seslendirme için kullanılabilecek metin bulunamadı."
         )
-
-    # ========================================================
-    # TTS İÇİN EMOJİLERİ / GÖRSEL SİMGELERİ TEMİZLE
-    # ========================================================
-    # Bu işlem sadece Azure'a gönderilecek ses metnine uygulanır.
-    # Instagram'daki görsel/metin içeriği değişmez.
-    tts_metin = emoji_temizle(metin)
-
-    if not tts_metin.strip():
-
+    
+    # ⭐ BURADA: TÜYÜ EMOJİLERİ TEMİZLE (döndürmeden önce)
+    metin = emoji_temizle(metin)
+    
+    if not metin.strip():
         raise ValueError(
-            "Emoji temizlendikten sonra seslendirme metni boş kaldı."
+            "Emoji temizlendikten sonra metin boş kaldı."
         )
-
+    
     print(
-        f"TTS metni (emoji temizlenmiş): {tts_metin[:150]}..."
+        f"TTS metni (emoji temizlenmiş): {metin[:150]}..."
     )
-
-    return tts_metin
+    return metin
 
 
 # ============================================================
