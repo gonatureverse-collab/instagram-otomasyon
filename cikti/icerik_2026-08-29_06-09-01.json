@@ -1,0 +1,53 @@
+{
+  "baslik": "İptal Edilen Tren Bileti Ne Olur?",
+  "kapak_emoji": "🚂",
+  "slaytlar": [
+    "🚂 Almanya'da trenin iptal olması sık rastlanan bir durumdur. Bileteğinin hakkını bilmek çok önemlidir.",
+    "💰 İptal durumunda geri ödeme (Rückerstattung) hakkınız vardır. Para iade almak için başvuruda bulunmanız gerekir.",
+    "🔄 Alternatif seçeneğiniz var: Aynı gün başka bir trene binebilir veya daha sonra seyahat etmeyi tercih edebilirsiniz.",
+    "📅 Geri ödeme başvurusu için belirli süreler vardır. Tren şirketi resmi kurallarını kontrol etmelisiniz.",
+    "📱 Başvuru genellikle tren şirketinin web sitesi veya mobil uygulaması üzerinden yapılır. Biletinizi hazır tutun."
+  ],
+  "emojiler": [
+    "🚂",
+    "💰",
+    "🔄",
+    "📅",
+    "📱"
+  ],
+  "reel": {
+    "baslik": "Tren İptali Oldu? Hakkını Biliyorsun mu?",
+    "sahneler": [
+      "Trenin iptal olması en kötü senaryo... Ama hakkın var biliyorsun değil mi?",
+      "Türkiye'de alışkın olmadığımız şey: Almanya'da tren iptali olunca para iade alabiliyorsun.",
+      "Seçenek 1: Paranı geri al - Rückerstattung başvurusu yap.",
+      "Seçenek 2: Bugün başka trene bin - Benzer saatte başka bir tren var mı kontrol et.",
+      "Ya da başka bir güne ertelesen bile hakkın korunuyor.",
+      "Tren şirketinin uygulamasında veya web sitesinde başvuru yap, belgelerini hazırla!"
+    ],
+    "cta": "Başına geldiyse yorumda yaz, deneyimini paylaş! 👇"
+  },
+  "story": {
+    "baslik": "Sana Tren İptali Oldu mu Hiç?",
+    "metin": "Tren iptal olduğunda sen ne yaparsın?",
+    "anket": [
+      "Para geri al (Rückerstattung)",
+      "Başka trene bin"
+    ]
+  },
+  "caption": "Almanya'da trenin iptal olması rahatsız edici ama hakkını bilmelisin! Para iade alma, başka trene binme veya erteleleme seçeneğin var. Tren şirketinin kurallarını kontrol etmeyi unutma ve başvurunu zamanında yap. Senin başına geldi mi? Yorum bölümünde yaz! 👇",
+  "hashtagler": [
+    "#Almanya",
+    "#AlmanyadadaYasam",
+    "#TrenBileti",
+    "#AlmanyaNasilYapilir",
+    "#Deutschebahn",
+    "#Seyahat",
+    "#AlmanyaTips",
+    "#GeriOdeme",
+    "#AlmanyaKilavuzu",
+    "#TurkceAlemanya"
+  ],
+  "konu": "Almanya'da iptal edilen tren bileti ne olur",
+  "tarih": "2026-08-29_06-09-01"
+}
