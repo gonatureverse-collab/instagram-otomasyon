@@ -1,0 +1,53 @@
+{
+  "baslik": "Vize Süresi Aşıldı mı? İşte Sonuçlar",
+  "kapak_emoji": "⏰",
+  "slaytlar": [
+    "Almanya'da vize süresi aşmak ciddi sorunlara yol açabilir. Yasal durumunuz etkilenir ve cezalar gelebilir.",
+    "Vize süresi aştıktan sonra Almanya'dan ayrılış yapmak zorunludur. Dış ülkeye gitmedikçe statünüz geçersiz sayılır.",
+    "Süresi aşan kişiler Ausländeramt'a (Yabancılar Dairesi) hemen başvurmalıdır. Geç başvuru durumu daha da ağırlaştırabilir.",
+    "Cezalar, geri dönüş yasağı (Einreiseverbot) veya hukuki işlem riski vardır. Finansal cezalar da söz konusu olabilir.",
+    "Gelecekte vize başvurusunda süresi aşan kişiler olumsuz değerlendirilir. Yeni vize almak çok daha zorlaşır."
+  ],
+  "emojiler": [
+    "⚠️",
+    "🚫",
+    "📋",
+    "⚖️",
+    "❌"
+  ],
+  "reel": {
+    "baslik": "Vize Süresi Aşmak = Büyük Sorun",
+    "sahneler": [
+      "Uyarı: Vize süresi bitişini fark ettiniz mi? Bu çok ciddi bir durum.",
+      "Süresi aşıldığında yasal statünüz geçersiz hale gelir. Almanya'da kalmak yasak sayılır.",
+      "Ne yapmalı? Hemen Ausländeramt'a (Yabancılar Dairesi) başvurun. Erteleme yapmayin!",
+      "Geri dönüş yasağı, para cezası ve hatta gözaltı riski vardır.",
+      "İleride vize başvurusu yaparsanız, bu durum sizi takip eder ve başvuru reddedilebilir.",
+      "Eğer süresi aşan durumdasanız, hemen profesyonel hukuki danışma alın!"
+    ],
+    "cta": "Bilmediğin bir şey varsa yorum yaz, yardımcı olmaya hazırız!"
+  },
+  "story": {
+    "baslik": "Süresi Aşan Var mı?",
+    "metin": "Almanya'da vize süresi aşmış birini tanıyor musun? Hemen Ausländeramt'a başvurması gerekir! ⚠️",
+    "anket": [
+      "Başvurdum bile 😰",
+      "Henüz yok, kolay gelsin 💪"
+    ]
+  },
+  "caption": "Vize süresi aşılırsa Almanya'da ciddi sorunlarla karşı karşıya kalırsınız. Yasal durumunuz geçersiz hale gelir, ceza alabilirsiniz ve gelecekte vize başvurusu çok zorlaşır. Eğer durumdaysanız, hemen Ausländeramt'a başvurun ve profesyonel yardım alın. Güncel bilgiyi resmi kurumdan kontrol etmeyi unutmayın. 👇 Sakla, paylaş ve kimseye uyar!",
+  "hashtagler": [
+    "#AlmanyaVisesi",
+    "#ViseSüresi",
+    "#AlmanyadaYasam",
+    "#Ausländeramt",
+    "#AlmanyaNasilYapilir",
+    "#GöçHukuku",
+    "#TürkAlmanya",
+    "#BilgiPaylasimi",
+    "#AlmanyaDevlet",
+    "#SosyalYardim"
+  ],
+  "konu": "Almanya'da vize süresi aşılırsa ne olur",
+  "tarih": "2026-08-30_06-08-56"
+}
