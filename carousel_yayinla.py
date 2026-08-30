@@ -26,7 +26,7 @@ CIKTI_KLASOR = Path("cikti")
 GORSEL_KLASOR = Path("gorseller")
 
 KONTROL_ARALIGI = 5
-MAKSIMUM_BEKLEME = 180
+MAKSIMUM_BEKLEME = 300
 
 
 # ============================================================
