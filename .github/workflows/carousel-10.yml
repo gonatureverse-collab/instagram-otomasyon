@@ -35,7 +35,8 @@ jobs:
         run: |
           git add kullanilan_konular.json cikti/ gorseller/
           git diff --cached --quiet || git commit -m "carousel: $(date +%Y-%m-%d-%H-%M)"
-          git push
+          git pull origin main --rebase
+          git push origin main
       - name: GitHub görsellerinin erişilebilir olmasını bekle
         run: sleep 20
       - name: Carousel yayınla
@@ -47,6 +48,7 @@ jobs:
         run: python carousel_yayinla.py
       - name: Yayın sonrası değişiklikleri kaydet
         run: |
+          git pull origin main --rebase
           git add kullanilan_konular.json cikti/ gorseller/
           git diff --cached --quiet || git commit -m "carousel: yayın sonrası $(date +%Y-%m-%d-%H-%M)"
-          git push
+          git push origin main
