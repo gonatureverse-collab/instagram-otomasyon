@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya Vizesi İçin Gerekli Belgeler",
+  "kapak_emoji": "🇩🇪",
+  "slaytlar": [
+    "Pasaport: En az 3 ay geçerli olmalı. Biyometrik pasaport tercih edilir.",
+    "Vize Başvuru Formu: Doldurulmuş ve imzalanmış Schengen vize formu gereklidir.",
+    "Sigorta: Almanya'da tedavi masraflarını karşılayan Schengen sağlık sigortası zorunludur.",
+    "Mali Durum: Banka hesap ekstreleri ve gelir belgesi talep edilebilir. Gerekli tutar başvuru türüne göre değişir.",
+    "Amaç Belgesi: Iş, eğitim veya turizm amaçlı belgeler (davet mektubu, kabul yazısı vb.) sunulmalıdır."
+  ],
+  "emojiler": [
+    "🛂",
+    "📋",
+    "🏥",
+    "💰",
+    "📎"
+  ],
+  "reel": {
+    "baslik": "Almanya Vizesi Başvurusunda İhtiyaç Duyduğun Belgeler",
+    "sahneler": [
+      "Almanya vizesi almak istiyorsun? Hangi belgeler gerekiyor biliyor musun?",
+      "Birinci: Pasaportun en az 3 ay geçerli olmalı. Mutlaka kontrol et.",
+      "İkinci: Schengen vize formu. Doldur, imzala, hazır tut.",
+      "Üçüncü: Sağlık sigortası şart. Tedavi masraflarını karşılamalı.",
+      "Dördüncü: Para göster. Banka ekstreleri ve gelir belgesi isteyebilirler.",
+      "Beşinci: Amaçını açıkla. İş mektubu, kabul yazısı veya davet mektubu gerekirse sunan."
+    ],
+    "cta": "Tüm detayları Carousel'de bulabilirsin. Kaydet ve paylaş! 📌"
+  },
+  "story": {
+    "baslik": "Almanya Vizesi Başvurusuna Hazır Mısın?",
+    "metin": "Almanya vizesi almak için hangi belgeler en önemlisi?",
+    "anket": [
+      "Para ve sigorta",
+      "Pasaport ve form"
+    ]
+  },
+  "caption": "Almanya vizesi başvurusu yapmadan önce hangi belgeler gerekli bunu mutlaka öğren. 📄 Pasaport, vize formu, sağlık sigortası ve gelir belgesi en temel şartlar. Ayrıntılı kontrol listesi için Carousel'i kaydedebilir, güncel bilgiyi başvuru yapacağın elçilik veya konsolosluk sitesinden kontrol edebilirsin. Yorumda senin hangi belgeler hakkında merak ettiğini sor! 👇",
+  "hashtagler": [
+    "#AlmanyaVizesi",
+    "#AlmanyadaNasilYapilir",
+    "#VizeBelgeleri",
+    "#AlmanyayaYolculuk",
+    "#SchengenVizesi",
+    "#AlmanyadaYasam",
+    "#ImmigrationTürk",
+    "#AuslanderAmt",
+    "#VizaBaşvurusu",
+    "#TürkAlmanlar"
+  ],
+  "konu": "Almanya vizesi için hangi belgeler gerekir",
+  "tarih": "2026-09-02_06-24-15"
+}
