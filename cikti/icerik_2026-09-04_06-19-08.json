@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Öğrenci E-postası Nasıl Alınır?",
+  "kapak_emoji": "📧",
+  "slaytlar": [
+    "Almanya'da okuyan her öğrencinin bir üniversite e-postası vardır. Bu e-posta öğrencilik kanıtı, kütüphane erişimi ve resmi yazışmalar için gereklidir. 🎓",
+    "E-postanız genellikle kayıt (Immatrikulation) sonrası otomatik olarak oluşturulur. Üniversitenin e-posta sistemine (genellikle Stud.IP, HIS, SAP gibi sistemler) erişim sağlarsınız. 🔐",
+    "Giriş bilgileri (kullanıcı adı ve şifre) kayıt tamamlandıktan sonra e-posta veya mektupla size gönderilir. İlk girişinizde şifrenizi değiştirmeniz istenebilir. 🔑",
+    "Öğrenci e-postanız, kullanım süresi boyunca aktif kalır. Mezun olduktan sonra erişim süresi üniversiteye göre değişebilir—bazılarında 6 ay, bazılarında daha uzun süre devam eder. ⏰",
+    "Sorun yaşarsanız üniversitenizin IT desteğine (IT-Support, Help Desk) başvurun. Çoğu üniversite yardım hattı, canlı sohbet ve e-posta desteği sunmaktadır. 💬"
+  ],
+  "emojiler": [
+    "🎓",
+    "🔐",
+    "🔑",
+    "⏰",
+    "💬"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Öğrenci E-postası Almanızın Yolu",
+    "sahneler": [
+      "Yeni Almanya'ya gelen öğrenci misiniz? O zaman üniversite e-postanız tam sizin için.",
+      "Kayıt tamamladıktan sonra üniversite sizi otomatik olarak sisteme ekler.",
+      "Giriş bilgileriniz resmi mektup veya e-posta aracılığıyla gelir.",
+      "Üniversitenin e-posta portalına giriş yapıp şifrenizi ayarlarsınız.",
+      "Bu e-posta size kütüphane, ders sistemi ve resmi duyuruları açar.",
+      "IT destek hattı her zaman yardımcı olmaya hazır!"
+    ],
+    "cta": "Tüm adımları öğrenmek için carousel'i kontrol edin. Başka sorunuz varsa yorum yazın! 👇"
+  },
+  "story": {
+    "baslik": "Almanya'da e-posta almaya hazır mısın?",
+    "metin": "Henüz kayıt yaptırdın mı?",
+    "anket": [
+      "Evet, e-postamı aldım ✅",
+      "Henüz, bekliyorum 🕐"
+    ]
+  },
+  "caption": "Almanya'da okuyan her öğrenci için e-posta rehberi! 📧 Kayıt sonrası bu e-posta sizin dijital kimliktir. Kütüphane, kurslar, sınavlar—hepsi buradan geçer. Adımları yukarıda buldunuz. Kaydınızı henüz tamamlamadıysanız, size özel bir rehber hazırlamak ister misiniz? Yorum yazın! 💬",
+  "hashtagler": [
+    "#almanyadaöğrenci",
+    "#almanyadayasam",
+    "#almanyaepostası",
+    "#üniversite",
+    "#öğrencirehberi",
+    "#almanyanasilyapilir",
+    "#türkalmanya",
+    "#almanyatips",
+    "#erasmusturkiye",
+    "#studentlife"
+  ],
+  "konu": "Almanya'da öğrenci e-postası nasıl alınır",
+  "tarih": "2026-09-04_06-19-08"
+}
