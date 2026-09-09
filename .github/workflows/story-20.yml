@@ -5,9 +5,6 @@ on:
     # Yaz saati: 17:00 UTC = 19:00 Europe/Berlin
     - cron: "0 17 * * *"
 
-    # Kış saati: 18:00 UTC = 19:00 Europe/Berlin
-    - cron: "0 18 * * *"
-
   workflow_dispatch:
 
 permissions:
