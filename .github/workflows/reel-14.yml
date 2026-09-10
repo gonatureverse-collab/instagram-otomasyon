@@ -1,10 +1,11 @@
-name: 12:00 Reel Yayını
+name: 10:00 UTC Reel Yayını
 
 on:
   schedule:
-    # Yaz saati: 10:00 UTC = 12:00 Almanya
+    # Her gün 10:00 UTC
     - cron: "0 10 * * *"
 
+  # Manuel çalıştırma
   workflow_dispatch:
 
 permissions:
@@ -15,54 +16,45 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Depoyu indir
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Almanya saatini kontrol et
-        id: saat_kontrol
-        shell: bash
+      - name: UTC saatini kontrol et
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "calistir=true" >> "$GITHUB_OUTPUT"
-            echo "Manuel çalıştırma: workflow devam ediyor."
-            exit 0
-          fi
-
-          ALMANYA_SAATI=$(TZ=Europe/Berlin date +%H)
-
-          if [ "$ALMANYA_SAATI" = "12" ]; then
-            echo "calistir=true" >> "$GITHUB_OUTPUT"
-            echo "Almanya saati 12:00, workflow devam ediyor."
-          else
-            echo "calistir=false" >> "$GITHUB_OUTPUT"
-            echo "Yanlış UTC tetiklemesi, workflow durduruluyor."
-          fi
+          echo "=== GitHub UTC Saati ==="
+          date -u '+%Y-%m-%d %H:%M:%S UTC'
+          echo ""
+          echo "Almanya saati:"
+          TZ=Europe/Berlin date '+%Y-%m-%d %H:%M:%S %Z'
+          echo ""
+          echo "Workflow tetikleyicisi:"
+          echo "${{ github.event_name }}"
 
       - name: Python kurulumu
-        if: steps.saat_kontrol.outputs.calistir == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Gerekli paketleri kur
-        if: steps.saat_kontrol.outputs.calistir == 'true'
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
+
           python -m pip install --upgrade pip
+
           pip install playwright anthropic python-dotenv requests moviepy
+
           playwright install --with-deps chromium
 
       - name: Git ayarlarını yap
-        if: steps.saat_kontrol.outputs.calistir == 'true'
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
 
       - name: Reel üret ve yayınla
-        if: steps.saat_kontrol.outputs.calistir == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           AZURE_TTS_KEY: ${{ secrets.AZURE_TTS_KEY }}
@@ -77,9 +69,12 @@ jobs:
           python reel_uret.py
 
       - name: Değişiklikleri kaydet
-        if: steps.saat_kontrol.outputs.calistir == 'true'
         run: |
           git add kullanilan_konular.json cikti/ gorseller/ reels/
-          git diff --cached --quiet || \
-            git commit -m "reel: $(date +%Y-%m-%d-%H-%M)"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "Kaydedilecek değişiklik yok."
+          else
+            git commit -m "reel: $(date -u +%Y-%m-%d-%H-%M)"
+            git push
+          fi
