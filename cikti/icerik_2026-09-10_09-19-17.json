@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Tek Kişi Aylık Yaşam Maliyeti",
+  "kapak_emoji": "💰",
+  "slaytlar": [
+    "Almanya'da tek kişi aylık ortalama yaşam maliyeti 1.000-1.500 EUR arası değişir. Bu rakam şehre, yaşam tarzına ve kişisel tercihlerine göre farklılık gösterir. 📊",
+    "Konut: Aylık kira ortalaması 400-800 EUR. Şehir merkezinde daha yüksek, kırsal bölgelerde daha düşüktür. Nebenkosten (elektrik, su, ısıtma) ek 150-200 EUR. 🏠",
+    "Yiyecek ve İçecek: Aylık gıda harcaması 200-300 EUR olur. Market alışverişi nispeten uygun fiyatlı, dışarıda yemek daha pahalı olabilir. 🛒",
+    "Ulaşım: Şehir içi toplu taşıma kartı 50-100 EUR, araba varsa benzin ve sigorta ek maliyet. Bisiklet yaygın ve ekonomik seçenek. 🚌",
+    "Diğer Giderler: Telefon, internet, sigortalar, hobi ve kişisel bakım toplamda 150-250 EUR. Bu rakamlar minimum seviyedir. 📱"
+  ],
+  "emojiler": [
+    "📊",
+    "🏠",
+    "🛒",
+    "🚌",
+    "📱"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Ayda Ne Kadar Harcıyorsun?",
+    "sahneler": [
+      "Almanya'ya geliyorsun ve ilk sorun: Ayda ne kadar gerekli? Cevap: Şehire bağlı!",
+      "Kira: 400-800 EUR. Bu senin bütçenin neredeyse yarısı olabilir.",
+      "Yemek: 200-300 EUR aylık. Market ucuz, restoran biraz pahalı.",
+      "Ulaşım: 50-100 EUR toplu taşıma, ya da bisiklet sıfır maliyet!",
+      "Diğer şeyler: Telefon, internet, sigortalar hepsi de var. Toplam: 1.000-1.500 EUR minimum.",
+      "Kendi harcamalarını hesapla, çünkü her kişi farklı yaşar!"
+    ],
+    "cta": "Yorum yap: Sen Almanya'da aylık ne kadar harcıyorsun? 👇"
+  },
+  "story": {
+    "baslik": "Almanya'da Yaşam Maliyeti",
+    "metin": "Almanya'da tek kişi aylık bütçen kaç EUR olmalı sence?",
+    "anket": [
+      "800 EUR'ye kadar yeterli",
+      "1.200 EUR ve üzeri gerekli"
+    ]
+  },
+  "caption": "Almanya'da yaşamak ne kadar tutuyor? Tek kişi için ortalama 1.000-1.500 EUR aylık harcama yapıyorsun; kira en büyük kalemin oluyor. Tabii ki Berlin, München ve Frankfurt'ta farklı, Doğu Almanya'da daha uygun. Kendi hesabını yap, çünkü yaşam tarzın önemli! 💡 Bu bilgileri kaydedip arkadaşlarınla paylaşın, sorularınızı yorumlarda sorun! 👇",
+  "hashtagler": [
+    "#AlmanyaBütçesi",
+    "#AlmanyadalYasam",
+    "#TekKişiMaliyet",
+    "#AlmanyaNasılYapılır",
+    "#GöçmenBütçesi",
+    "#AlmanyaHayatı",
+    "#EvroBütçesi",
+    "#AlmanyaYaşamMaliyeti",
+    "#TürkAlmanya",
+    "#AlmanyAda"
+  ],
+  "konu": "Almanya'da tek kişi yaşama maliyeti ne kadar",
+  "tarih": "2026-09-10_09-19-17"
+}
