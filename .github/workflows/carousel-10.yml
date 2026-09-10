@@ -1,10 +1,8 @@
-name: 06:00 Carousel Yayını
+name: 09:00 Carousel Yayını
 
 on:
   schedule:
-    # Yaz saati: 04:00 UTC = 06:00 Europe/Berlin
-    - cron: "0 4 * * *"
-
+    - cron: "0 7 * * *" # Şu an: 07:00 UTC = Berlin 09:00
   workflow_dispatch:
 
 permissions:
@@ -30,14 +28,17 @@ jobs:
             exit 0
           fi
 
-          BERLIN_SAATI=$(TZ=Europe/Berlin date +%H)
+          BERLIN_ZAMANI=$(TZ=Europe/Berlin date '+%Y-%m-%d %H:%M:%S')
+          BERLIN_SAATI=$(TZ=Europe/Berlin date '+%H')
 
-          if [ "$BERLIN_SAATI" = "06" ]; then
+          echo "Berlin zamanı: $BERLIN_ZAMANI"
+
+          if [ "$BERLIN_SAATI" = "09" ]; then
             echo "calistir=true" >> "$GITHUB_OUTPUT"
-            echo "Berlin saati 06:00, workflow devam ediyor."
+            echo "Berlin saati 09:00, workflow devam ediyor."
           else
             echo "calistir=false" >> "$GITHUB_OUTPUT"
-            echo "Yanlış UTC tetiklemesi, workflow durduruluyor."
+            echo "Berlin saati 09 değil, workflow durduruluyor."
           fi
 
       - name: Python kurulumu
