@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Emeklilik Yaşı Nasıl Hesaplanır?",
+  "kapak_emoji": "🇩🇪",
+  "slaytlar": [
+    "Almanya'da emeklilik yaşı kişinin doğum tarihi ve çalışma yıllarına göre değişir. Standart emeklilik yaşı 67 yaş olsa da, erken veya geç emekli olmak mümkündür.",
+    "1964 ve sonrası doğanlar için tam emeklilik yaşı 67 yaştır. Her ay doğum tarihine göre hesaplanır.",
+    "Sosyal sigorta (Deutsche Rentenversicherung) kişi 63 yaşında erken emekli olabilir, ancak aylık emeklilik miktarında azalma olur.",
+    "İşgücü piyasasında zorluklar nedeniyle 63 yaşında işsiz olarak emekli olmak mümkündür. Bu durumda belge gerekebilir.",
+    "Emeklilik hesaplaması için resmi kuruma başvurmak en güvenlidir. Deutsche Rentenversicherung ücretsiz danışmanlık sunar. www.deutsche-rentenversicherung.de kontrol et."
+  ],
+  "emojiler": [
+    "📊",
+    "📅",
+    "⏰",
+    "💼",
+    "☎️"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Emeklilik Yaşı 67 Midir? 🇩🇪",
+    "sahneler": [
+      "Merak et mi? Almanya'da emeklilik yaşı herkes için aynı değil! 🤔",
+      "1964 ve sonrası doğanlar için: 67 yaş tam emeklilik!",
+      "63 yaşında emekli olmak istersen? Mümün ama aylık azalıyor.",
+      "67 yaşından sonra çalışırsan emeklilik daha yüksek olur!",
+      "Kendi durumunu öğrenmen en iyisi? Deutsche Rentenversicherung'a sor!",
+      "Kaydet ve paylaş! 📌"
+    ],
+    "cta": "Deutsche Rentenversicherung'ın resmi sitesinden kişisel emeklilik tarihini öğren!"
+  },
+  "story": {
+    "baslik": "Emeklilik Yaşı Hakkında Merak Ediyor musun?",
+    "metin": "Sen kaç yaşında emekli olmayı planlıyorsun? Seç! 👇",
+    "anket": [
+      "63 yaşında (erken emeklilik)",
+      "67 yaşında (tam emeklilik)"
+    ]
+  },
+  "caption": "Almanya'da emeklilik yaşı 67 yaş, ama doğum tarihiniz ve çalışma geçmişinize göre değişebilir. Erken emeklilik seçenekleri var ama azalma uygulanır. Kesin bilgi için Deutsche Rentenversicherung'a başvurmak en güvenlidir! Yorumda senin merak ettikleri sor veya arkadaşını etiketle. 👉 Bunu kaydetmeyi unutma! 📌",
+  "hashtagler": [
+    "#almanya",
+    "#emeklilik",
+    "#deutscherentenversicherung",
+    "#almanyadayasam",
+    "#almanyadanasilyapilir",
+    "#türkçealmanya",
+    "#almanyatakiş",
+    "#göçmen",
+    "#sosyalsigorta",
+    "#rente"
+  ],
+  "konu": "Almanya'da emeklilik yaşı nasıl hesaplanır",
+  "tarih": "2026-09-11_09-50-25"
+}
