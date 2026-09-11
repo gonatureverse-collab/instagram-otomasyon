@@ -3,7 +3,7 @@ name: 18:00 UTC Story Yayını
 on:
   schedule:
     # Her gün 18:00 UTC
-    - cron: "0 18 * * *"
+    - cron: "0 13 * * *"
 
   # Manuel çalıştırma
   workflow_dispatch:
