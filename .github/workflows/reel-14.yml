@@ -3,7 +3,7 @@ name: 10:00 UTC Reel Yayını
 on:
   schedule:
     # Her gün 10:00 UTC
-    - cron: "0 8 * * *"
+    - cron: "0 10 * * *"
 
   # Manuel çalıştırma
   workflow_dispatch:
