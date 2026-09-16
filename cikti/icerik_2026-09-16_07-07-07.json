@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Aşı Kartı Nasıl Alınır?",
+  "kapak_emoji": "💉",
+  "slaytlar": [
+    "Aşı kartı (Impfpass), Almanya'da aşılarınızı kayıt ettirecek belgedir. Doktor veya aşılama merkezinden alabilirsiniz.",
+    "İlk aşınızı yaptırdığınız yerde başvurabilirsiniz. Doktor ya da tıbbi personel sizi kayıt edip kartı verecektir.",
+    "Dijital aşı sertifikası (Digitale Impfbescheinigung) de önemlidir. Eczane'de (Apotheke) QR kodlu dijital versiyon isteyebilirsiniz.",
+    "Kayıtlı sosyal sigorta veya belediye hizmetleri merkezine başvurabilirsiniz. Gerekli belgeleri yanınızda bulundurun.",
+    "Aşı kartınızı güvenli yerde tutun. Kopyasını da yanınızda taşımak akıllıca olur. Herhangi sorunuz varsa doktorunuza danışın."
+  ],
+  "emojiler": [
+    "📋",
+    "⚕️",
+    "📱",
+    "🏛️",
+    "🔒"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Aşı Kartı Alma Adımları",
+    "sahneler": [
+      "Aşı kartı Almanya'da resmen tanınan bir belgedir. Nasıl elde edeceğinizi öğrenin!",
+      "Adım 1: Aşınızı yaptıracağınız yer doktor, hastane veya halk sağlığı merkezi olabilir.",
+      "Adım 2: Aşıdan hemen sonra personel size resmi Impfpass kartını verecektir.",
+      "Adım 3: Dijital versiyon istiyorsanız eczaneye gidip QR kodlu belge talep edin.",
+      "Adım 4: Kartı güvenli yerde saklamayı unutmayın. Önemli bir belgedir!",
+      "Sorularınız varsa doktorunuza sorun. Paylaşmayı unutmayın!"
+    ],
+    "cta": "Yorum yazın: Aşı kartınızı aldınız mı? 👇"
+  },
+  "story": {
+    "baslik": "Almanya'da Aşı Kartı Hakkında",
+    "metin": "Siz aşı kartınızı hangi yerde aldınız?",
+    "anket": [
+      "Doktor/Hastanede",
+      "Halk Sağlığı Merkezinde"
+    ]
+  },
+  "caption": "Almanya'da aşı kartı almak oldukça basit! 💉 Aşıyı yaptırdığınız yer siz için resmi kartı düzenler. Dijital versiyonu eczaneden istemeyi unutmayın! Sizin deneyiminiz nedir? Yorum yazın ve sayfamızı takip edin 👇 #almanya #aşı #sağlık",
+  "hashtagler": [
+    "#almanya",
+    "#asikartı",
+    "#almanyadasaglik",
+    "#impfpass",
+    "#almanyadayasam",
+    "#deutschlandfüranfänger",
+    "#türkalmanyadayasiyor",
+    "#almanyadanasilyapilir",
+    "#almanyatips",
+    "#goethe"
+  ],
+  "konu": "Almanya'da aşı kartı nasıl alınır",
+  "tarih": "2026-09-16_07-07-07"
+}
