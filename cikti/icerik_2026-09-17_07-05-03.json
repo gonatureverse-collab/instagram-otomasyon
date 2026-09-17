@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Hisse Senedi Nasıl Alınır?",
+  "kapak_emoji": "📈",
+  "slaytlar": [
+    "Almanya'da hisse senedi almak için önce bir banka veya broker'da hesap açman gerekir. Online platformlar da kullanabilirsin.",
+    "Kimlik doğrulaması (PostIdent veya VideoIdent) yapman zorunlu. Belgelerin ve adresin kontrol edilecek.",
+    "Hesap açtıktan sonra parası yatırabilir ve hisse senedi alabilirsin. Başlangıç için küçük miktarlarla başlamanı tavsiye ederiz.",
+    "Vergi konusu önemlidir: Almanya'da hisse senedi kazançları vergilendirilir. Detaylar için Finanzamt'a danış.",
+    "DAX, MDAX gibi Almanya borsasında işlem gören hisseleri inceleyebilirsin. Yatırım danışmanından destek al."
+  ],
+  "emojiler": [
+    "🏦",
+    "📱",
+    "💳",
+    "📊",
+    "🎯"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Hisse Senedi Almaya Başla",
+    "sahneler": [
+      "Hisse senedi almak istiyorsun? Almanya'da çok basit!",
+      "Adım 1: Bir banka veya online broker seç (N26, Trade Republic, Comdirect vs.)",
+      "Adım 2: Kimlik doğrulaması yap - PostIdent veya video ile birkaç dakika sürer.",
+      "Adım 3: Para yatır ve çalışmaya başla. Başta düşük miktarlarla dene.",
+      "Adım 4: Vergi meselesi var - Finanzamt'a danış, kazançlar vergilendirilir.",
+      "Merak etme, milyonlar yapıyor, sen de yapabilirsin!"
+    ],
+    "cta": "Detaylı rehber için kaydını al ve yorum yaz! 👇"
+  },
+  "story": {
+    "baslik": "Almanya'da Hisse Senedi Almaya Hazır mısın?",
+    "metin": "Hisse senedi yatırımına başlamadan önce hangi aşamadadasın?",
+    "anket": [
+      "İlk defa duyuyorum 🤔",
+      "Başlamaya hazırım ✅"
+    ]
+  },
+  "caption": "Almanya'da hisse senedi almak hayal değil, gerçek! Bir banka hesabı aç, kimlik doğrulaması yap ve başla. Vergi konusu var tabii - Finanzamt'a danış. Yorumda hangi broker'ı kullandığını yaz, başkalarına yardımcı ol! 💬",
+  "hashtagler": [
+    "#AlmanyaHisseSenedi",
+    "#AlmanyaYatırım",
+    "#AlmanyaNasilYapilir",
+    "#FinansBöcek",
+    "#AlmanyaBroker",
+    "#HisseSenediNedir",
+    "#AlmanyadasiYasam",
+    "#FinansmanTurkce",
+    "#AlmanyaParaPara",
+    "#YatırımStratejisi"
+  ],
+  "konu": "Almanya'da hisse senedi nasıl alınır",
+  "tarih": "2026-09-17_07-05-03"
+}
