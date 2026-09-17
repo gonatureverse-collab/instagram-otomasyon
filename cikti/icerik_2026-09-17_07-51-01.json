@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Alarm Sistemi Kurulumu",
+  "kapak_emoji": "🔐",
+  "slaytlar": [
+    "Almanya'da ev ve daire güvenliği için alarm sistemi kurmak yasal ve pratiktir. Başlamadan önce ev sahibinden veya yönetimden izin almalısın.",
+    "Alarm sistemi türleri: Bekçilik hizmeti olan sistemler (mit Überwachung) veya kendi kendini izleyen sistemler (ohne Überwachung). İhtiyacına göre seç.",
+    "Profesyonel kurulum: Elektrikçi veya güvenlik şirketi ile iletişime geç. Malzeme maliyeti ortalaması 500-2000€ arasında değişebilir. Fiyat teklifi al.",
+    "Sigorta ve vergi: Bazı sigorta şirketleri alarm sistemi olan evlerde indirim yapabilir. Sigorta acentene danış. Kurulum masrafları kısmen vergi indiriminde kullanılabilir.",
+    "Yasal ve komşu ilişkileri: Alarm sistemi yerleştirirken komşuları bilgilendir. Falsch (yanlış) alarmlar için ceza uygulanabilir, bu yüzden sistemi doğru ayarla."
+  ],
+  "emojiler": [
+    "📋",
+    "🔧",
+    "💰",
+    "📝",
+    "👥"
+  ],
+  "reel": {
+    "baslik": "Almanya'da 60 Saniyede Alarm Sistemi Kurulum Adımları",
+    "sahneler": [
+      "Ev sahibinden yazılı izin al - bunu başta yap!",
+      "Hangi sistem istiyorsun? Profesyonel takip veya DIY? Seçim yap.",
+      "Elektrikçi bul, teklif al, fiyat karşılaştır.",
+      "Kurulumu yaptır ve sistemi doğru ayarla.",
+      "Sigorta şirketine bildir, indirim sorusu sor.",
+      "Komşularına haber ver, yanlış alarmdan sakın!"
+    ],
+    "cta": "Daha fazla bilgi için profilimizi takip et ve kaydet!"
+  },
+  "story": {
+    "baslik": "Seni Meraklandıran Soru",
+    "metin": "Almanya'da alarm sistemi kurmayı düşünüyor musun?",
+    "anket": [
+      "Evet, kurmak istiyorum 🔐",
+      "Henüz karar vermedim 🤔"
+    ]
+  },
+  "caption": "Almanya'da evini güvenli hale getirmek istiyorsan alarm sistemi kurması gerekebilir. Önemli adım: Ev sahibinden izin al, profesyonel yardım al ve sigorta şirketini haberdar et. Türkçe konuşan birisiydim ve bu konuda yardıma ihtiyacım vardı—belki sen de! Açıklamalar bölümünde soruların varsa yorum yap, paylaş ve takip et! 🇩🇪🔒",
+  "hashtagler": [
+    "#AlmanyadaNasilYapilir",
+    "#AlmanyaGuvenlik",
+    "#AlarmSistemi",
+    "#TurkceAlmanya",
+    "#EvGuvenigi",
+    "#AlmanyaTurkler",
+    "#YeniBaslayanlar",
+    "#AlmanyaYasam",
+    "#Sicherheit",
+    "#AlmanyaEvTarifleri"
+  ],
+  "konu": "Almanya'da alarm sistemi nasıl kurulur",
+  "tarih": "2026-09-17_07-51-01"
+}
