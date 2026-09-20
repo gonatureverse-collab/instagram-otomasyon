@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Tatilde Sağlık Hizmeti",
+  "kapak_emoji": "🏥",
+  "slaytlar": [
+    "🏥 Acil durumlarda 112 ara. Eczema (eczema) yani eczaneler reçetesiz ilaç satabilir.",
+    "📱 Uygulamalar: Doctolib ve Jameda ile doktor randevusu alabilirsin. İnternet üzerinden online doktor da var.",
+    "💳 Turist sigortası al. Bazı hastaneler ödeme için kart istiyor, öncesinde kontrol et.",
+    "📋 Arzt (pratisyen) bul. Almanca 'Hausarzt' yazarak arama yap, çoğu İngilizcede konuşuyor.",
+    "⏰ Hafta sonu ve geceleri acil merkezler (Notfall) aç, randevusuz gidebilirsin. Bekleme süresi uzun olabilir."
+  ],
+  "emojiler": [
+    "📱",
+    "💳",
+    "📋",
+    "⏰",
+    "✅"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Hasta mısın? İşte Yapman Gerekenler",
+    "sahneler": [
+      "Acil durum mu? Hemen 112 ara! Bu numarayı kaydına al.",
+      "Doktor mü lazım? Doctolib ve Jameda uygulamalarını indir, randevu al. Basit ve hızlı!",
+      "Eczaneden ilaç al. Almanya'da eczacılar baya şey satıyor, reçete olmasa da.",
+      "Turist sigortasın var mı? Hemen kontrol et. Bazı yerlerde gerekli!",
+      "Normal gün randevusu zor? Notfall (acil) merkezine git, herkes kabul edilir.",
+      "Daha fazla ipucu için sayfayı takip et! 👇"
+    ],
+    "cta": "Daha fazla Almanya tüyoları için bizi takip et ve kaydet! 💚"
+  },
+  "story": {
+    "baslik": "Almanya'da Sağlık Hizmetleri",
+    "metin": "Doktor randevusu almak için hangisini tercih edersin?",
+    "anket": [
+      "Telefon açıp randevu al",
+      "Doctolib uygulamasını kullan"
+    ]
+  },
+  "caption": "Almanya'da hasta oldum diye panik yapmana gerek yok! 🏥 Acil durumlarda 112, normal randevular için Doctolib ve Jameda, ve tabii ki pratisyen doktor (Hausarzt). Turist misin? Sigortanı kontrol et. Başında bir şey olduysa, bu post kaydına alabilirsin. Yorum yaz: Almanya'da sağlık hizmetini nasıl buldun? 👇",
+  "hashtagler": [
+    "#AlmanyaDaNasilYapilir",
+    "#AlmanyadaSaglik",
+    "#AlmanyaTurist",
+    "#AlmanyayaGelen",
+    "#DocSprache",
+    "#AlmanyaYasamiTurlari",
+    "#PratikBilgiler",
+    "#AlmanyaTakip",
+    "#YenidenBaslamak",
+    "#AlmanyaliOlmak"
+  ],
+  "konu": "Almanya'da tatilde sağlık hizmeti nasıl alınır",
+  "tarih": "2026-09-20_07-23-33"
+}
