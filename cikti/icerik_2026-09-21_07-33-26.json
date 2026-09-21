@@ -1,0 +1,52 @@
+{
+  "baslik": "Almanya'da Araba Finansmanı Adım Adım",
+  "kapak_emoji": "🚗",
+  "slaytlar": [
+    "Almanya'da araba almak istiyorsanız finansman seçeneklerini bilmeniz gerekir. Banka kredisi, Leasing veya diler finansmanı en yaygın yöntemlerdir.",
+    "Banka Kredisi: Geleneksel yöntemdir. Bankalara başvurursunuz, kreditwürdigkeit (kredi geçmişi) kontrol edilir ve faiz oranları belirlenip araba satın alırsınız.",
+    "Leasing: Arabanın sahibi siz olmaz, sadece kullanım hakkı alırsınız. Aylık ödemelerle belirli süre (genellikle 2-4 yıl) araba kullanırsınız, sonra geri verirsiniz.",
+    "Diler Finansmanı: Arabanın satıcısından doğrudan finansman alabildirisiniz. Bankadan daha hızlı olabilir fakat faiz oranları daha yüksek olabilir.",
+    "Başlamadan Önce: Schufa puanınızı kontrol edin, aylık bütçeniz ve vadesi kaç yıl olacak bunu belirleyin. Farklı bankaların tekliflerini karşılaştırın."
+  ],
+  "emojiler": [
+    "💳",
+    "🏦",
+    "🔄",
+    "🤝",
+    "✏️"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Araba Kredisi Almak",
+    "sahneler": [
+      "Araba almak istiyorsunuz ama nasıl finansman yapılır bilmiyor musunuz? Tamam, biz anlatıyoruz!",
+      "Önce Schufa'nızı kontrol edin. Kredi geçmiş buradan kontrol edilir.",
+      "Banka kredisi seçebilirsiniz - en düşük faiz oranları burada.",
+      "Ya da Leasing - aylık ödeme, araba her zaman yeni, bakım insan sorumluluğunda.",
+      "Diler finansmanı da var ama oranlar biraz daha yüksek olabiliyor.",
+      "Hangi yol sizin için uygun? Kaydedip farklı bankaların tekliflerini karşılaştırın!"
+    ],
+    "cta": "Başka Almanya'da Nasıl Yapılır konuları için bizi takip edin! 🇩🇪"
+  },
+  "story": {
+    "baslik": "Almanya'da Araba Finansmanı",
+    "metin": "Siz araba almak için hangisini tercih ederdiniz?",
+    "anket": [
+      "Banka Kredisi",
+      "Leasing"
+    ]
+  },
+  "caption": "Almanya'da araba finansmanı belli seçeneklerle yapılır. Banka kredisi, leasing ya da diler finansmanı arasından seçebilirsiniz. Her yöntemin kendine göre avantajları var - hangisi size daha uygun geldi? Yorum yazın, kaydedip daha sonra kullanın! 👇",
+  "hashtagler": [
+    "#almanya",
+    "#almanyadayasam",
+    "#arabafinansmanı",
+    "#almanyadarabaalma",
+    "#leasing",
+    "#bankakredi",
+    "#almanyanasilyapilir",
+    "#türkyaşananlar",
+    "#göçmenrehberi"
+  ],
+  "konu": "Almanya'da araba finansmanı nasıl yapılır",
+  "tarih": "2026-09-21_07-33-26"
+}
