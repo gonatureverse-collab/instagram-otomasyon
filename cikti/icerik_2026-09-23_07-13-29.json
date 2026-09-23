@@ -1,0 +1,53 @@
+{
+  "baslik": "KFZ Versicherung Nedir? Almanya'da Araba Sigortası",
+  "kapak_emoji": "🚗",
+  "slaytlar": [
+    "KFZ Versicherung, Almanya'da araba sahibi olmak için zorunlu olan sigorta türüdür. Araba kullanmadan önce mutlaka bu sigortayı yaptırmalısın.",
+    "Haftasına 2 ana tip vardır: Haftpflicht (sorumluluk sigortası - zorunlu) ve Kaskoversicherung (çarpışma ve hasar sigortası - isteğe bağlı).",
+    "Haftpflicht, sende meydana gelen kazada diğer kişi veya araçlara verilen hasarı karşılar. Almanya'da bu sigorta olmadan araba kullanmak yasaktır.",
+    "KFZ sigortası için premium fiyatı arabanın marka, model, yaşı, motor gücü ve senin sürüş kaydına bağlı değişir.",
+    "Her yıl Aralık ayında sigorta şirketini değiştirebilirsin. Öncesinde farklı şirketlerden fiyat teklifi iste ve karşılaştır."
+  ],
+  "emojiler": [
+    "⚖️",
+    "💼",
+    "🛡️",
+    "💰",
+    "📅"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Araba Sigortası: KFZ Versicherung Anlatımı",
+    "sahneler": [
+      "Arabanı kaydettirdin mi? Yok mu? Duş! KFZ Versicherung yapmak zorundasın!",
+      "KFZ Versicherung, araba sahibinin sigortasıdır. Almanya'da bu olmadan hiç yol yapamazsın.",
+      "İki çeşidi var: Haftpflicht (sorumlu sigorta - zorunlu) ve Kasko (arabanın kendisini korur - isteğe bağlı).",
+      "Haftpflicht, senin kazanda başkasına verdiğin hasarı karşılar. Bu sigorta olmadan ceza yersin.",
+      "Fiyatlar arabanın özelliğine, yaşına ve senin kaydına göre değişir. İnternet'te hızlı teklifler alabilirsin.",
+      "Aralık'ta şirket değiştirebilirsin. Araştır, karşılaştır, en uygununu seç!"
+    ],
+    "cta": "Arabanız varsa hemen yorumda 'Kasko' veya 'Haftpflicht' yazın. Şirket seçim ipuçları için bizi takip edin! 👇"
+  },
+  "story": {
+    "baslik": "KFZ Versicherung Hakkında Hızlı Soru",
+    "metin": "Almanya'da araba sigortası yapmayı düşünüyor musun?",
+    "anket": [
+      "Evet, bilgi almak istiyorum 📋",
+      "Zaten yaptırdım ✅"
+    ]
+  },
+  "caption": "KFZ Versicherung olmadan Almanya'da araba kullanmak mümkün değildir! 🚗 Haftpflicht zorunlu, Kasko ise arabanı ekstra korur. Fiyatlar değişken olduğu için yıl sonunda karşılaştırma yapmanı tavsiye ederiz. Bu konu hakkında daha fazla bilgi almak ister misin? Yorum yap, kaydet ve arkadaşını etiketle! 👇",
+  "hashtagler": [
+    "#KFZVersicherung",
+    "#AlmanyaKurallari",
+    "#ArbabaSimgortasi",
+    "#AlmanyadaNasilYapilir",
+    "#YeniGelenler",
+    "#AlmanyaYasam",
+    "#PratikBilgiler",
+    "#TurkceIcerik",
+    "#AlmanyaTavsiye",
+    "#HaftpflichtVeKasko"
+  ],
+  "konu": "Almanya'da Kfz Versicherung nedir",
+  "tarih": "2026-09-23_07-13-29"
+}
