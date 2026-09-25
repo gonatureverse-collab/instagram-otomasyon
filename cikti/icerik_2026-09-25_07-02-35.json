@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Sigorta Primi Nasıl Hesaplanır?",
+  "kapak_emoji": "🇩🇪",
+  "slaytlar": [
+    "Sigorta primi hesaplanması brüt maaşınıza ve sigorta türüne bağlı olarak değişir. Sağlık, işsizlik ve emeklilik sigortaları için ayrı ayrı yüzdeler uygulanır.",
+    "Sağlık sigortası (Krankenversicherung) için yaklaşık %8-9 oranı vardır. Bu oran sigorta şirketi seçimine göre de farklılık gösterebilir.",
+    "İşsizlik sigortası (Arbeitslosenversicherung) brüt maaşın yaklaşık %2,6'sı kadar hesaplanır. Her yıl bu oran değişebilir, güncel oranı kontrol edin.",
+    "Emeklilik sigortası (Rentenversicherung) brüt maaşın yaklaşık %9,3'ü kadar kesilir. Bu oran her yılın başında güncellenir.",
+    "Toplam sigorta kesintisi: Brüt maaşınız × (sağlık + işsizlik + emeklilik yüzdeleri). Net maaşınız brüt maaştan bu kesintiler çıkarıldıktan sonra kalan tutardır."
+  ],
+  "emojiler": [
+    "💶",
+    "🏥",
+    "📊",
+    "👵",
+    "✂️"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Sigorta Primi Hesaplama",
+    "sahneler": [
+      "Başlık: Maaşından ne kadar sigorta kesintisi olacak?",
+      "Brüt maaşınız alınır, örneğin 3000 Euro",
+      "Sağlık sigortası: Brütün %8-9'u kesintiye gider",
+      "İşsizlik ve emeklilik sigortaları da ekstra kesilir",
+      "Hepsi toplandığında net maaşınız bulunur",
+      "Detaylar için sayfayı kaydet ve sor!"
+    ],
+    "cta": "Kendi maaşını hesaplamak için açıklamayı oku! Sorularını yorumda sor."
+  },
+  "story": {
+    "baslik": "Sigorta Primi Hesaplama 🧮",
+    "metin": "Sigorta primi hesaplarken en çok hangi kısım kafa karıştırıyor?",
+    "anket": [
+      "Kaç tane sigorta türü olduğu",
+      "Yüzdelerin nasıl uygulandığı"
+    ]
+  },
+  "caption": "Almanya'da maaşından kesilen sigorta priminin nasıl hesaplandığını biliyor musunuz? Brüt maaşınızdan sağlık, işsizlik ve emeklilik sigortaları düşülür. Her biri farklı yüzde oranıyla hesaplanır. Tam hesaplama sürecini carousel'imizde adım adım açıkladık. Kendi maaşını hesaplamak istersen carousel'i kaydet ve paylaş! 💶 Soruların varsa yorumda yazabilirsin.",
+  "hashtagler": [
+    "#almanya",
+    "#almanyadayasam",
+    "#sigorta",
+    "#maas",
+    "#almanyadanasilyapilir",
+    "#turkcealmanya",
+    "#almanyatarifleri",
+    "#gosb",
+    "#versicherung",
+    "#deutschlandleben"
+  ],
+  "konu": "Almanya'da sigorta primi nasıl hesaplanır",
+  "tarih": "2026-09-25_07-02-35"
+}
