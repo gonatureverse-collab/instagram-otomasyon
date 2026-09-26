@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Mezuniyet Başvurusu Adım Adım",
+  "kapak_emoji": "🎓",
+  "slaytlar": [
+    "Mezuniyet (Abschluss) Almanya'da resmi bir belgedir. Üniversiteni bitirdikten sonra başvuru yapman gerekir.",
+    "İlk adım: Üniversitenin mezuniyet ofisine (Prüfungsamt) git. Her üniversitenin kendi süreci vardır.",
+    "Gerekli belgeler: Doldurulmuş başvuru formu, kimlik belgesi, derece transkripti ve varsa diş tarafından tasdikli belgeleri hazırla.",
+    "Başvurunu belirtilen tarihler içinde yap. Üniversite her dönem son başvuru tarihi koyar. Resmi sitenden kontrol et.",
+    "Onay aldıktan sonra sertifika alırsın. Bu belge iş başvurularında ve yüksek lisans başvurularında kullanılır."
+  ],
+  "emojiler": [
+    "📄",
+    "🏫",
+    "📋",
+    "📅",
+    "✅"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Mezuniyet Belgesi Nasıl Alınır?",
+    "sahneler": [
+      "Üniversiteni bitirdin mi? Şimdi sıra mezuniyet belgesi almakta!",
+      "İlk stop: Prüfungsamt (Sınav Ofisi). Burayla iletişime geç.",
+      "Form doldur, kimlik getir, transkriptler hazırla.",
+      "Başvuru tarihlerine dikkat et, son günde kalma!",
+      "İşlem biraz sürebilir, sabırlı ol.",
+      "Belgeni aldıktan sonra resmi başvurulara başlayabilirsin."
+    ],
+    "cta": "Üniversitene özgü tarihleri hemen öğren! Profilimizi takip et."
+  },
+  "story": {
+    "baslik": "Mezuniyet Başvurusu Hakkında Bilgin Var mı?",
+    "metin": "Almanya'da mezuniyet belgesi başvurusu hakkında kaç tanesini biliyorsun?",
+    "anket": [
+      "Henüz hiç bilmiyorum",
+      "Zaten başvurdum"
+    ]
+  },
+  "caption": "Almanya'da üniversiteni tamamladıktan sonra mezuniyet belgesi alman gerekir. 🎓 İşlem üniversiteden üniversiteye değişebilir ama genel adımlar benzerdir. Başvuru tarihlerini kaçırmamak için üniversitenin resmi sitesinden güncel bilgiyi kontrol etmeyi unutma! Sorularınız varsa yorum bölümüne yazabilirsiniz. 👇",
+  "hashtagler": [
+    "#almanya",
+    "#mezuniyet",
+    "#üniversite",
+    "#almanyadayasam",
+    "#almanyadanasilyapilir",
+    "#başvuru",
+    "#abschluss",
+    "#türkalmanya",
+    "#almanyagüvenliği",
+    "#prüfungsamt"
+  ],
+  "konu": "Almanya'da mezuniyet başvurusu nasıl yapılır",
+  "tarih": "2026-09-26_06-59-55"
+}
