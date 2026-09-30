@@ -1,0 +1,55 @@
+{
+  "baslik": "Almanya'da Sağlık Faturası Nasıl Okunur?",
+  "kapak_emoji": "🇩🇪",
+  "slaytlar": [
+    "Almanya'da sağlık faturası (Rechnung) ilk bakışta karmaşık görünebilir. Ancak adım adım takip etmek çok kolay!",
+    "Faturanın üst kısmında hastanın/doktor kliniğinin adı, tarihi ve fatura numarası yer alır. Bu bilgiler önemlidir.",
+    "Ortada 'Leistungen' (hizmetler) bölümü vardır. Burada hangi tedavi, muayene veya testler yapıldığı listelenmiştir.",
+    "Her hizmetin yanında 'Gebühr' (ücret) yazılı fiyat görsün. Tüm fiyatlar toplanarak toplam tutar ('Gesamtbetrag') hesaplanır.",
+    "Alt kısımda ödeme bilgileri, IBAN ve son ödeme tarihi bulunur. Tarihi geçirmemeye dikkat edin.",
+    "Hiç bir şey anlaşılmazsa sigorta şirketinize veya doktor kliniğine sorum. Açıklama isteme hakkınız vardır."
+  ],
+  "emojiler": [
+    "📋",
+    "👤",
+    "🩺",
+    "💰",
+    "📅",
+    "☎️"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Fatura Okumak Bu Kadar Kolay!",
+    "sahneler": [
+      "Elinde bir Almanca sağlık faturası mı var? Merak etme, çok basit!",
+      "Üst tarafta kim tarafından yapıldığını gör: doktor, hastane, laboratuvar...",
+      "Ortada 'Leistungen' yani 'yapılan işler' bölümü var. Ne yapılmış, ne kadar tutmuş bak.",
+      "Her satırı toplarsın ve 'Gesamtbetrag' yani toplam fiyatı görsün.",
+      "Altta ödeme tarihi ve hesap numarası var. Tarihi unutma!",
+      "Hiçbir şey anlaşılmazsa doktor veya sigortan sana açıklar. Soru sormaktan çekinme!"
+    ],
+    "cta": "Yorumda eğer sizin de karışık gelen bir bölümü paylaşın, yardımcı olmaktan mutlu oluruz!"
+  },
+  "story": {
+    "baslik": "Sağlık Faturanız Kaç Sayfasından Oluşuyor?",
+    "metin": "Almanya'da sağlık faturası almışsınız. Kaç sayfalı geldi?",
+    "anket": [
+      "1-2 sayfa (basit)",
+      "3+ sayfa (detaylı)"
+    ]
+  },
+  "caption": "Almanya'da gelen sağlık faturası anlaşılmaz görünüyor mu? Sakin olun! Basit kurallarla her faturayı okuyabilirsiniz. Tüm adımları Carousel'de bulabilirsiniz. Eğer faturanız hakkında sorunuz varsa sigorta şirketinize veya kliniğe yazın—açıklama isteme hakkınız vardır. 💙 Paylaş, arkadaşlarını bilgilendir!",
+  "hashtagler": [
+    "#almanya",
+    "#almanyadayasam",
+    "#almanyadasaglik",
+    "#fatura",
+    "#krankenkasse",
+    "#almanyadanasilyapilir",
+    "#turkvealman",
+    "#almanyayenidengelerin",
+    "#praktiktavsiyeler",
+    "#deutschlandtipps"
+  ],
+  "konu": "Almanya'da sağlık faturası nasıl okunur",
+  "tarih": "2026-09-30_07-51-37"
+}
