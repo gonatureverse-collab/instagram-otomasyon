@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'dan Türkiye'ye Eşya Gönderme Rehberi",
+  "kapak_emoji": "📦",
+  "slaytlar": [
+    "DHL, UPS, FedEx gibi kargo şirketleri en güvenilir seçenekler. Fiyatlar ağırlığa ve boyuta göre değişir.",
+    "Paketini hazırlamadan önce adres bilgilerini doğru yaz. Türkiye'deki alıcının tam adresi ve telefon numarası şart.",
+    "Kargo şirketinin websitesinden ya da şubeden gümrük formlarını doldur. Paket içeriğini gerçeğe uygun listele.",
+    "Değerli eşyalar için sigorta yaptırmayı düşün. Kargo şirketi sigorta seçeneklerini sunacaktır.",
+    "Gönderme sonrası takip numarası al. Türkiye'de alıcı bu numara ile paketini takip edebilir."
+  ],
+  "emojiler": [
+    "🚚",
+    "📍",
+    "📋",
+    "🛡️",
+    "📲"
+  ],
+  "reel": {
+    "baslik": "Almanya'dan Eşya Gönderme: 5 Adımda Başarı",
+    "sahneler": [
+      "Almanya'da yaşayan birisi eşya paketliyor - Türkiye'ye göndermek istiyorum!",
+      "Adım 1: DHL, UPS veya FedEx seç. İnternetten fiyat karşılaştırması yap.",
+      "Adım 2: Paketini iyi kapat ve boyutlarını ölç. Ağırlığını tartan tartıda ölç.",
+      "Adım 3: Türkiye'deki alıcının tam adresini ve telefon numarasını hazırla.",
+      "Adım 4: Kargo formlarını doldur, içeriği doğru listele. İhtiyacsa sigorta ekle.",
+      "Adım 5: Takip numarası al ve paketinin yolculuğunu takip et. Bitmiş! 🎉"
+    ],
+    "cta": "Kargo şirketlerinin fiyatlarını karşılaştırdın mı? Yorumlarda hangi kargo şirketini kullandığını yaz! 👇"
+  },
+  "story": {
+    "baslik": "Hangi Kargo Şirketi Senin Favorin?",
+    "metin": "Almanya'dan Türkiye'ye eşya gönderirken hangisini tercih ediyorsun?",
+    "anket": [
+      "DHL - hızlı ve güvenilir",
+      "UPS/FedEx - diğer seçenekler"
+    ]
+  },
+  "caption": "Almanya'dan Türkiye'ye eşya göndermek çok korkutucu görünse de aslında oldukça basit! DHL, UPS gibi güvenilir kargo şirketleri bu işi çok kolaylaştırıyor. Doğru adres ve doldurulmuş formlar senin en iyi dostun. 📦 Carousel'i kaydet, yakında kullanacağın zaman başa dön. Hattı kargo gönderdiysen yorum atarak deneyimini paylaş! 👇",
+  "hashtagler": [
+    "#almanya",
+    "#kargo",
+    "#esyagonderme",
+    "#almanyadanasilyapilir",
+    "#turk",
+    "#diaspora",
+    "#dhl",
+    "#paketkargo",
+    "#almanyayasam",
+    "#turkiyeturkiye"
+  ],
+  "konu": "Almanya'dan Türkiye'ye eşya nasıl gönderilir",
+  "tarih": "2026-10-02_07-52-17"
+}
