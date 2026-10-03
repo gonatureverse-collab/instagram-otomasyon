@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Araç İthalatı Adım Adım",
+  "kapak_emoji": "🚗",
+  "slaytlar": [
+    "Almanya'da araç ithalatı yapmak için önce araç kaynağını belirlemeniz gerekir. Türkiye'den, AB ülkelerinden veya başka yerlerden ithal edebilirsiniz.",
+    "İthal edeceğiniz araç için gümrük belgelerini hazırlamalısınız. TÜV raporu, fatura ve mülkiyet belgesi gereklidir. Detaylar araç kaynağına göre değişebilir.",
+    "Almanya'da araç tescili için TÜV/Dekra muayenesinden geçmesi şarttır. Araç Alman standartlarına uygun olmalı ve emisyon testini geçmelidir.",
+    "Araç sigorta poliçesi almalı ve kayıt için Zulassungsstelle'ye (tescil ofisi) başvurmalısınız. Belgeleri buraya sunduğunuzda araç resmileştirilir.",
+    "Tüm işlemler tamamlandıktan sonra araç plakası alır ve yolda kullanabilirsiniz. Tam maliyet aracın durumuna, kaynağına ve vergilere bağlı olarak değişir."
+  ],
+  "emojiler": [
+    "🌍",
+    "📋",
+    "🔧",
+    "📝",
+    "✅"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Araç İthalatı - Pratik Rehber",
+    "sahneler": [
+      "Araç mı ithal etmek istiyorsun? 🚗 Adım adım kılavuz geldi!",
+      "Adım 1: Araç kaynağını seç. Türkiye, AB ülkeleri veya başka yerler olabilir.",
+      "Adım 2: Gümrük belgeleri hazırla - fatura, TÜV raporu, mülkiyet belgesi.",
+      "Adım 3: Almanya'da TÜV/Dekra muayenesine sok. Standartlara uygun olmalı!",
+      "Adım 4: Tescil ofisine (Zulassungsstelle) git. Sigorta poliçesi ve belgeleri sun.",
+      "Sonuç: Plakası çıktı, yollara çıkabilirsin! 🎉 Daha fazla bilgi için kaydı açık tut."
+    ],
+    "cta": "Bu konuda sorularınız mı var? Yorum bölümüne yazın, cevaplamaya hazırız!"
+  },
+  "story": {
+    "baslik": "Araç İthalatı Sorunu Var mı?",
+    "metin": "Almanya'da araç ithal etmeyi düşünüyor musunuz? Nereden ithal etmeyi planlıyorsunuz?",
+    "anket": [
+      "Türkiye'den ithal etmek istiyorum",
+      "AB ülkelerinden ithal etmek istiyorum"
+    ]
+  },
+  "caption": "Almanya'da araç ithalatı yapmanın süreci uzun görünebilir ama adım adım ilerlesen sorun yok! 🚗 Gümrük belgelerinden TÜV muayenesine, tescile kadar her aşamanın kendi kuralları var. Bilgili olmak işi çok kolaylaştırır. Bu konuda tecrübenlerin var mı? Yorum bölümünde paylaş ya da başkasının işine yarasın diye paylaş!",
+  "hashtagler": [
+    "#almanya",
+    "#araçithalatı",
+    "#almanyadayasam",
+    "#almanyadanasilyapilir",
+    "#oto",
+    "#gümrük",
+    "#tuv",
+    "#tescil",
+    "#türkalmanya",
+    "#göçmen"
+  ],
+  "konu": "Almanya'da araç ithalatı nasıl yapılır",
+  "tarih": "2026-10-03_07-29-34"
+}
