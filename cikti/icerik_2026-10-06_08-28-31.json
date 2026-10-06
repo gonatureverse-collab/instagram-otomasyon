@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Freelancer Olarak Başlamak",
+  "kapak_emoji": "💼",
+  "slaytlar": [
+    "Almanya'da freelancer olmak için önce Vergilendirilmiş Kişi (Selbstständiger) olarak kayıt yaptırmanız gerekir. Finansamt'a başvuru yapın.",
+    "Ticari Sicil (Handelsregister) her eyalette farklıdır. Bazı freelance işleri için zorunlu değildir ama danışmanız iyi olur.",
+    "Sosyal sigorta (Krankenversicherung) özel olarak seçmeniz gerekir. Minijob değilse zorunlu genel sağlık sigortası yapmanız lazım.",
+    "Müşteri bulmak için Upwork, Fiverr gibi platformlar veya LinkedIn kullanabilirsiniz. Alman müşteriler için XING de etkilidir.",
+    "İlk yıl muhasebe ve vergi danışmanı (Steuerberater) bulmanız işi kolaylaştırır. Ücretini müşteri üzerinden çıkarabilirsiniz."
+  ],
+  "emojiler": [
+    "📝",
+    "📋",
+    "🏥",
+    "💻",
+    "🤝"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Freelancer Olmak: Adım Adım",
+    "sahneler": [
+      "Almanya'da freelancer olmak istiyorsanız ilk adım önemli!",
+      "Finansamt'a gidip Selbstständiger olarak kayıt yaptırın.",
+      "Sağlık sigortanız için özel bir plan seçin.",
+      "Ticari Sicil gerekli mi diye sorun, eyaleteye göre değişir.",
+      "Upwork, Fiverr veya XING'de müşteri arayın.",
+      "Muhasebe konusunda profesyonel yardım alın, sonra başlayın!"
+    ],
+    "cta": "Daha fazla detay için carousel'i kontrol edin. Paylaş, beğen, yorum yap! 👇"
+  },
+  "story": {
+    "baslik": "Almanya'da Freelancer Olmaya Hazır mısın?",
+    "metin": "Sen de Almanya'da freelancer olarak çalışmak istiyor musun?",
+    "anket": [
+      "Evet, başlamak istiyorum",
+      "Henüz bilgim yok, öğrenmek istiyorum"
+    ]
+  },
+  "caption": "Almanya'da freelancer olmak karmaşık görünse de adım adım gidince çok basit! 🇩🇪 Finansamt, sağlık sigortası, müşteri bulma... hepsinin çözümü var. Sen de yapabilirsin! Bir sorun mu var? Yorum yaz, bu sayfayı kaydet ve arkadaşlarına paylaş! 💼",
+  "hashtagler": [
+    "#almanya",
+    "#freelancer",
+    "#selbstständig",
+    "#almanyadadınyasam",
+    "#çalışma",
+    "#almanyanasilyapilir",
+    "#finansamt",
+    "#türktürkiye",
+    "#almanyaişi",
+    "#profesyonel"
+  ],
+  "konu": "Almanya'da freelancer olarak nasıl başlanır",
+  "tarih": "2026-10-06_08-28-31"
+}
