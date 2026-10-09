@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Kira Dosyası Nasıl Hazırlanır?",
+  "kapak_emoji": "📋",
+  "slaytlar": [
+    "Ev kiralamak için kira dosyası (Mietgesuch) hazırlamanız gerekir. Bu dosya ev sahibine güven vermeyi sağlar. 📋",
+    "Dosyaya kimlik belgesi fotokopisi, son 3 ay maaş bordrosu ve çalışan referans mektubu ekleyin. 📄",
+    "Eski ev sahibisinden referans mektubu alın. Kiralarınızı düzenli ödediğinizi gösteren belge çok önemlidir. 👤",
+    "Banka ekstresi, sosyal sigorta belgesi (Versicherungsverlauf) ve varsa iş sözleşmesini de ekleyin. 🏦",
+    "Dosyayı PDF olarak hazırlayıp e-posta ile gönderin veya görüşme sırasında sunun. Başvurudan önce formatı sorun. ✅"
+  ],
+  "emojiler": [
+    "📋",
+    "📄",
+    "👤",
+    "🏦",
+    "✅"
+  ],
+  "reel": {
+    "baslik": "Kira Dosyası Hazırlama: Adım Adım",
+    "sahneler": [
+      "Almanya'da ev arıyorsunuz? Kira dosyası olmadan başlamayın!",
+      "İlk şey: Kimlik belgesi, maaş bordrolarınız ve iş sözleşmesi fotokopisi hazırlayın.",
+      "Eski ev sahibinizden referans mektubu isteyin. Bu çok önemli!",
+      "Banka ekstresini ve sosyal sigorta belgesini ekleyin.",
+      "Hepsini PDF dosyasına toplayıp hazır tutun.",
+      "Ev sahibi talep ettiğinde hemen gönderebilirsiniz!"
+    ],
+    "cta": "Kira dosyası hazırladınız mı? Yorum bölümünde yazın! 👇"
+  },
+  "story": {
+    "baslik": "Kira Dosyası Hazırladın mı?",
+    "metin": "Almanya'da ev ararken kira dosyası hazırlamaya başladın mı?",
+    "anket": [
+      "Evet, başladım!",
+      "Henüz başlamadım"
+    ]
+  },
+  "caption": "Almanya'da ev bulmak zor, ama kira dosyası hazırlamak kolay! 📋 Doğru belgelerle ev sahibinin güvenini kazanabilirsiniz. Hangi belge eksik diye merak edenler, carousel'i kaydeder ve paylaşabilirler. Sorularınız varsa yorum yapın! 👇",
+  "hashtagler": [
+    "#AlmanyaDaYasam",
+    "#KiraArayisı",
+    "#AlmanyaNasilYapilir",
+    "#EvBulma",
+    "#TurkAlmanya",
+    "#UmzugDeutschland",
+    "#AlmanyaYardim",
+    "#YeniBaslayanlar",
+    "#AlmanyaFaydaliBilgiler",
+    "#MietgesuchAlmanya"
+  ],
+  "konu": "Almanya'da kira dosyası nasıl hazırlanır",
+  "tarih": "2026-10-09_17-52-27"
+}
