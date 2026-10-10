@@ -1,0 +1,53 @@
+{
+  "baslik": "Almanya'da Yabancıların Yaptığı Finans Hataları",
+  "kapak_emoji": "💰",
+  "slaytlar": [
+    "❌ HATA 1: Banka hesabı açmadan para göndermek. Almanya'da resmi bir banka hesabı olmadan maaş alamaz, ev kirayı ödeyemezsiniz. İlk işiniz bir banka seçmek olmalı.",
+    "❌ HATA 2: Versicherung (sigorta) gerekliliğini göz ardı etmek. Sağlık sigortası, ev sigortası, sorumluluk sigortası Almanya'da zorunludur. Cezası ağırdır.",
+    "❌ HATA 3: Kredi puanınızı (Schufa) önemsememek. Almanya'da her finansal işlem Schufa kayıtlarınıza bakılarak yapılır. Kötü puan ev kiralama ve kredi almayı imkansız hale getirir.",
+    "❌ HATA 4: Vergi beyannamesini (Steuererklärung) önemsememek. Vergisini düzgün vermeyen yabanabcı işçiye ceza ve geri ödeme talep edilir. Vergi danışmanına danış.",
+    "❌ HATA 5: Gayri resmi iş yapmak. Almanya'da kaçak çalışmak ceza ve deportasyonla sonuçlanır. Daima resmi işleri tercih et ve sözleşmeni kontrol et."
+  ],
+  "emojiler": [
+    "🏦",
+    "🛡️",
+    "📊",
+    "📋",
+    "✍️"
+  ],
+  "reel": {
+    "baslik": "Almanya'da Finans Hataları | Bunları Yapma!",
+    "sahneler": [
+      "Almanya'ya yeni geldiniz mi? Finansal hatalar yapmayın! 🇩🇪",
+      "Hata 1: Banka hesabı olmadan. Açın hemen, her şey buna bağlı! 🏦",
+      "Hata 2: Sigorta yok. Sağlık, ev sigortası zorunlu! İhlal = Ceza! 🛡️",
+      "Hata 3: Schufa puan düşük. Bu, kiralık ev bulmanızı engeller! 📊",
+      "Hata 4: Vergi beyannamesini es geçtiniz. Yapın, geri ödeme istemezsiniz! 💸",
+      "Hata 5: Kaçak çalışmak. Deportasyon riski! Daima resmi iş yap! ✅"
+    ],
+    "cta": "Tüm detaylar carousel'de! Kaydet ve danışmanınla kontrol et. 👆"
+  },
+  "story": {
+    "baslik": "Almanya'da Finans Konusu Hakkında",
+    "metin": "Sen Almanya'da yaşayan yabancı olarak bu hatalardan kaç tanesini yaptın? 🤔",
+    "anket": [
+      "Hiçbirini, çok dikkatli davrandım! ✅",
+      "Bir iki hata yaptım, ama düzelttim 😅"
+    ]
+  },
+  "caption": "Almanya'da yaşamak kolay değil, ama bilgi sahibi olmak işi kolaylaştırır! 🇩🇪 Banka, sigorta, Schufa, vergi ve resmi iş kuralları karışık geliyorsa, senin değilsin. Carousel'de 5 kritik hatayı ve nasıl kaçınabileceğini detaylı anlattık. Bir arkadaşına gönder, birlikte ögrenin! 💪 Yorumda en çok merak ettiğin finans konusu ne? ⬇️",
+  "hashtagler": [
+    "#AlmanyaDaYasam",
+    "#AlmanyaNasilYapilir",
+    "#YabanciBireyFinans",
+    "#AlmanyaFinansTavsiye",
+    "#TurkAlmanyada",
+    "#SchuPa",
+    "#AlmanyaBankaHesabi",
+    "#FinansHataları",
+    "#AlmanyaVergisi",
+    "#AlmanyaYasalHaklari"
+  ],
+  "konu": "Almanya'da yabancıların yaptığı finans hataları",
+  "tarih": "2026-10-10_12-06-25"
+}
